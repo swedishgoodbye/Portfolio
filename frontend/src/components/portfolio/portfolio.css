@@ -1,0 +1,16 @@
+.portfolio-page{
+    height: 960px;
+    padding: 1%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.project-card{
+    border: 1px solid red;
+    /* width: 15%; */
+    margin: .5%;
+    height: 25%;
+
+}
+

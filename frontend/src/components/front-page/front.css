@@ -1,0 +1,59 @@
+/* .front-page {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url(IMG_0056.JPG) no-repeat 50% 50%;
+    display: table;
+    top: 0;
+    background-size: cover;
+} */
+
+/* .front-page {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+
+} */
+
+.front-page{
+    height: 958px;
+    width: 100%;
+    /* margin: auto; */
+    background: url('../../media/IMG_0056.JPG');
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    /* display: table; */
+    /* top: 0; */
+    background-size: 100% 145.5%;
+    /* overflow: hidden; */
+}
+
+.front-text {
+    /* max-width: 500px; */
+    /* margin: 0 23.5% auto */
+
+    
+
+    margin: 0 20% 0 16.4%;
+    padding-top: 10%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    /* color: rgb(247, 242, 242); */
+    color: rgba(255, 253, 253, 0.678);
+    /*text-shadow: 0px 0px 200px #000;*/
+    font-size: 1900%;
+    margin-bottom: 0px;
+    /* border: solid 2px white;
+    border-spacing: 50px; */
+    /* background-color: rgba(1, 7, 10, 0.8); */
+
+}
+
+/* .content h1{
+    font-family: 'Raleway', sans-serif;
+    color: #D0D0D0;
+    /*text-shadow: 0px 0px 200px #000;*/
+    /* font-size: 800%;
+    margin-bottom: 0px;
+}  */

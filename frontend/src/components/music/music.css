@@ -1,0 +1,7 @@
+.music-page{
+    height: 960px;
+    padding: 1%;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: row;
+}

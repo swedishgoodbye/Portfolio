@@ -1,0 +1,7 @@
+.contact-page{
+    height: 960px;
+    padding: 1%;
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    width: 100%; 
+}
+
+/* .tempNav{
+    position: fixed; */
+    /* bottom: 0; */
+    /* width: 100%;
+}
+
+.main{
+    margin-bottom: 30px;
+} */
+
+/* 
+.App {
+    height: 1014px;
+    width: 100%;
+    /* margin: auto; */
+    /* background: url('./media/IMG_0056.JPG'); */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* display: table; */
+    /* top: 0; */
+    /* background-size: 100% 145%; */
+    /* overflow: hidden; */
+
+
+
+    .temp-nav {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed; /* Set the navbar to fixed position */
+        bottom: 0; /* Position the navbar at the top of the page */
+        width: 100%; /* Full width */
+      }
+      
+      .nav-button {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .nav-button:hover {
+        background: #ddd;
+        color: black;
+      }
+      
+      .main {
+        padding: 16px;
+        margin-bottom: 50px;
+        height: 1500px; /* Used in this example to enable scrolling */
+      }

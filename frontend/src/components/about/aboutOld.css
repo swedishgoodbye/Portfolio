@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.about-page{
+    background-color: black;
+    height: 958px;
+    width: 100%;
+    /* margin: auto; */
+    background: url('../../media/aboutbg.jpg') no-repeat;
+    /* display: table; */
+    /* top: 0; */
+    background-size: 100% 135%;
+    
+    
+}
+
+/* h3 {
+    margin: 0;
+    top: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 100%;
+    color: #edf5ee;
+    text-align: center;
+   
+} */
+
+/* .about-page{
+    background-color: rgb(0, 0, 0);
+    opacity: .95;
+} */
+
+.about-text {
+    background: black;
+    opacity: .85;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding-top: 0px;
+    top: 0;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 160%;
+    padding-bottom: 3px;
+}
+
+
+.p-left{
+    padding-top: 40px;
+    text-align: left;
+    padding-left: 25px;
+    color: #ffffff;
+    opacity: 1;
+}
+
+.p-right{
+    padding-top: 42.5px;
+    text-align: right;
+    padding-right: 25px;
+    color: rgb(203, 151, 231);
+    font-weight: 900;
+}
