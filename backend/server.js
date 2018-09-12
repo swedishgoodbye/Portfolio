@@ -31,16 +31,30 @@ const updateProjectRouter = require('./Router/Project/updateProjectRouter.js');
 
 const server = express();
 
-mongoose.connect('mongodb://username:abcd1234@ds161391.mlab.com:61391/lambda-labs', { useNewUrlParser: true })
-
-.then(() => console.log('\n===connected to mongo===\n'))
-.catch(err =>console.log('not connected'))
-
-
 server.use(express.json());
 server.use(cors());
 server.use(helmet());
 server.use(morgan('dev'));
 server.use(cors(corsOptions));
+
+// mLab connection
+
+mongoose.connect('mongodb://testuser:testpa$$w0rd.mlab.com:61391/lambda-labs', { useNewUrlParser: true })
+
+.then(() => console.log('\n===connected to mongo===\n'))
+.catch(err =>console.log('not connected'))
+
+// ========== ROUTES ========== //
+
+server.get('/', function(req, res) {
+  res.send({ api: 'up and at em' });
+});
+
+// ========== ROUTERS .use =============== //
+
+server.use('/api/cp/', createProjectRouter);
+server.use('/api/fp/', findProjectRouter);
+server.use('/api/rp/', removeProjectRouter);
+server.use('/api/up/', updateProjectRouter);
 
 server.listen(port, () => console.log('API on port 5000'));
