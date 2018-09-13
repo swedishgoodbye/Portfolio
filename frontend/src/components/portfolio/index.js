@@ -11,7 +11,7 @@ class Portfolio extends Component{
     constructor(props){
         super(props);
         this.state = {
-
+            // projects: []
         };
         this.props.getProjects();
         // this.state={
@@ -20,8 +20,13 @@ class Portfolio extends Component{
         // }
     }
 
+    componentDidMount(){
+        // console.log(this.state);
+    }
+
 
     render(){
+        console.log('port state', this.props.projects)
         return(
             <div className="portfolio-page"> 
                 <div className="project-card">
@@ -52,7 +57,7 @@ class Portfolio extends Component{
 
 const mapStateToProps = state => {
     return {
-        posts: state.posts
+        projects: state.projects
     };
 };
 
