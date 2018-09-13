@@ -4,7 +4,8 @@ import {
 } from "../actions";
 
 const intialState = {
-    projects: []
+    projects: [],
+    findingProject: false,
 };
 
 export const Reducer = (state = intialState, action) => {
@@ -19,7 +20,11 @@ export const Reducer = (state = intialState, action) => {
                 ...state,
                 findingProject: false,
                 projects: action.projects
-            }
+            };
+        case Error:
+            return { ...state, error: action.errorMessage };
+        default:
+            return state;
     }
 }
 

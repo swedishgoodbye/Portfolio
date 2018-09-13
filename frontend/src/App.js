@@ -7,6 +7,7 @@ import { connect } from 'react-redux';
 import Nav from './navigation/';
 import { Front, About, Portfolio, Music, Contact } from './components/'
 import scrollToComponent from 'react-scroll-to-component';
+import { getProjects } from './actions';
 
 import './App.css';
 
@@ -26,6 +27,7 @@ class App extends Component {
   }
 
   render() {
+    console.log('app state', this.state)
     return (
       <Router>
       <div className="App">
@@ -40,7 +42,7 @@ class App extends Component {
         <div className='main'>
         <Route href="#start" ref={(section) => { this.Front = section; }} render={() => <Front />} />
         <Route href="#about" ref={(section) => { this.About = section; }} render={() => <About />} />
-        <Route href="#portfolio" ref={(section) => { this.Portfolio = section; }} render={() => <Portfolio />} />
+        <Route href="#portfolio" ref={(section) => { this.Portfolio = section; }} render={props => <Portfolio {...props} />} />
         <Route href="#music" ref={(section) => {this.Music = section;}} render={() => <Music />} />
         <Route href="#contact" ref={(section) => {this.Contact = section;}} render={() => <Contact />} /> 
          {/* test */}
@@ -65,7 +67,7 @@ const mapStateToProps = state => {
 
 export default connect(
   mapStateToProps,
-  {}
+  { }
 )(App);
 
 // export default App;

@@ -20,10 +20,9 @@ export const getProjects = () => dispatch => {
     });
 
     axios
-        .get(`${URL}/classes`)
+        .get(`${URL}/fp`)
         .then(response => {
             console.log("FINDING PROJECTS", response.data.length);
-            const all_projects = response.data;
             dispatch({ type: FOUNDPROJECTS, projects: response.data 
             })
         })
