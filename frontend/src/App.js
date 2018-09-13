@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import {ScrollableAnchor} from 'react-scrollable-anchor';
+import { connect } from 'react-redux';
+
 
 import Nav from './navigation/';
 import { Front, About, Portfolio, Music, Contact } from './components/'
@@ -48,3 +50,8 @@ class App extends Component {
 }
 
 export default App;
+
+export default connect(
+  mapStateToProps,
+  {}
+)(App);
