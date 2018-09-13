@@ -52,7 +52,7 @@ class Portfolio extends Component{
 
 const mapStateToProps = state => {
     return {
-        posts: state.posts
+        projects: state.projects
     };
 };
 
