@@ -14,6 +14,13 @@ import './App.css';
 
 class App extends Component {
 
+  constructor(){
+    super();
+    this.state = {
+
+    };
+  }
+
   componentDidMount(){
     scrollToComponent(this.Front, { offset: 0, align: 'middle', duration: 500, ease:'inCirc'});
   }
@@ -49,7 +56,12 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    projects: state.projects,
+  }
+}
+
 
 export default connect(
   mapStateToProps,

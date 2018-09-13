@@ -23,7 +23,7 @@ router.route('/:id')
 .get((req, res) => {
   const { id } = req.params;
   Project.findById(id)
-    .populate('student')
+    .populate('project')
     .then(response => {
       res.json(response);
     })

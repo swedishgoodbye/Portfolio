@@ -9,7 +9,7 @@ import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// ReactDOM.render(<App />, document.getElementById('root'));
 
 // Redux Thunk:
 // const store = createStore(Reducer, applyMiddleware(logger, thunk));

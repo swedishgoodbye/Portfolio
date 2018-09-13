@@ -1,6 +1,6 @@
 import {
-    FINDINGPOSTS,
-    FOUNDPOSTS
+    FINDINGPROJECTS,
+    FOUNDPROJECTS
 } from "../actions";
 
 const intialState = {
@@ -9,16 +9,16 @@ const intialState = {
 
 export const Reducer = (state = intialState, action) => {
     switch (action.type) {
-        case FINDINGPOSTS:
+        case FINDINGPROJECTS:
             return {
                 ...state,
-                findingPost: true
+                findingProject: true
             };
-        case FOUNDPOSTS:
+        case FOUNDPROJECTS:
             return {
                 ...state,
-                findingPost: false,
-                posts: action.posts
+                findingProject: false,
+                projects: action.projects
             }
     }
 }

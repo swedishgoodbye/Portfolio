@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { getPosts } from '../../actions';
+import { getProjects } from '../../actions';
 import { connect } from 'react-redux';
 
 import './portfolio.css';
@@ -13,7 +13,7 @@ class Portfolio extends Component{
         this.state = {
 
         };
-        this.props.getPosts();
+        this.props.getProjects();
         // this.state={
         //     project_name: "test",
         //     project_thumb: URL,
@@ -58,4 +58,4 @@ const mapStateToProps = state => {
 
 export default connect(
     mapStateToProps,
-        { getPosts })(Portfolio);
+        { getProjects })(Portfolio);
