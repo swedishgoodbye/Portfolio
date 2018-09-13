@@ -1,16 +1,25 @@
 import React, { Component } from 'react';
 
+import { getProjects } from '../../actions';
+import { connect } from 'react-redux';
+
 import './portfolio.css';
+
 
 class Portfolio extends Component{
 
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
+        this.state = {
+
+        };
+        this.props.getProjects();
         // this.state={
         //     project_name: "test",
         //     project_thumb: URL,
         // }
     }
+
 
     render(){
         return(
@@ -41,4 +50,12 @@ class Portfolio extends Component{
     }
 }
 
-export default Portfolio;
+const mapStateToProps = state => {
+    return {
+        posts: state.posts
+    };
+};
+
+export default connect(
+    mapStateToProps,
+        { getProjects })(Portfolio);

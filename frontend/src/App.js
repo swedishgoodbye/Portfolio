@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import {ScrollableAnchor} from 'react-scrollable-anchor';
+import { connect } from 'react-redux';
+
 
 import Nav from './navigation/';
 import { Front, About, Portfolio, Music, Contact } from './components/'
@@ -11,6 +13,13 @@ import './App.css';
 
 
 class App extends Component {
+
+  constructor(){
+    super();
+    this.state = {
+
+    };
+  }
 
   componentDidMount(){
     scrollToComponent(this.Front, { offset: 0, align: 'middle', duration: 500, ease:'inCirc'});
@@ -47,4 +56,14 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    projects: state.projects,
+  }
+}
+
+
+export default connect(
+  mapStateToProps,
+  {}
+)(App);
