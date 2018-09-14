@@ -14,7 +14,7 @@ const projectSchema = new mongoose.Schema({
     },
     image: {
         type: String,
-        maxlength: 300
+        maxlength: 5000
     }
 })
 
