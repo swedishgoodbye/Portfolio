@@ -6,11 +6,20 @@
     flex-direction: row;
 }
 
+.project-card-outer{
+    border: 5px solid blue;
+    height: 16.5%;
+}
+
 .project-card{
     border: 1px solid red;
     /* width: 15%; */
     margin: .5%;
     height: 25%;
 
+}
+
+.project-thumb{
+    width: 20%;
 }
 
