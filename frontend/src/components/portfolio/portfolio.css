@@ -6,6 +6,10 @@
     flex-direction: row;
 }
 
+.project-card-outer{
+    border: 5px solid blue;
+}
+
 .project-card{
     border: 1px solid red;
     /* width: 15%; */
