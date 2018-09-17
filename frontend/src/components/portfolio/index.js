@@ -86,14 +86,14 @@ class Portfolio extends Component{
                     {this.props.projects.map(projItem => { 
                         return ( 
                             <div className="project-card"> 
-                                <div className="project-name"> <button onClick={this.openModal}>{projItem.title}</button>
-                                      
-                                </div> 
+                                <div className="project-name"> 
                                 <div className="project-thumb"> 
                                     {this.state.project_thumb} 
                                     <img src={projItem.image}/> 
                                     {/* <img src='https://photos.google.com/u/1/photo/AF1QipOWPVvBb0b7gIbuD4_xhgvBQ63rCWt4OZ1ibQuU'/> */}
                                  </div> 
+                                <button onClick={this.openModal}>{projItem.title}</button>                                      
+                                </div> 
                              </div>); 
                      })}
                 </div>
