@@ -30,3 +30,14 @@ export const getProjects = () => dispatch => {
             dispatch({ type: ERROR, errorMessage: 'Error Fetching Projects!'})
         });
 }
+
+export const deleteProject = project_id => dispatch => {
+    dispatch({
+        type: DELETEDPROJECT
+    });
+    axios.delete(`${URL}/deleteproject/${project_id}`).then(response => {
+        dispatch({
+            type: DELETEDPROJECT
+        });
+    });
+};
