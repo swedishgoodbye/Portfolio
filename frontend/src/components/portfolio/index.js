@@ -25,7 +25,8 @@ class Portfolio extends Component{
         this.props.getProjects();
         this.state = {
             modal: false,
-            projects: this.props.projects
+            // projects: this.props.projects
+            modalIsOpen: false
         };
         this.openModal = this.openModal.bind(this);
         this.afterOpenModal = this.afterOpenModal.bind(this);
@@ -37,26 +38,30 @@ class Portfolio extends Component{
     }
 
     openModal = e => {
-        // console.log(e.target.value)
-        for(let i = 0; i < this.props.projects.length; i++){
-            console.log(this.props.projects[i])
-            if(e.target.value == this.props.projects[i]._id){
-                return this.setState({modalIsOpen: true});
+        e.preventDefault();
+        let projects = this.props.projects;
+        console.log(e.target);
+
+        // if(e.target.value == this.props.projects)
+        // this.setState({modalIsOpen: true});
+        console.log(projects)
+
+        for(let i = 0; i <= projects.length; i++){
+     
+            if(e.target.value == projects[i].title){
+                console.log(this.props.projects[i]);
+                this.setState({modalIsOpen: true})
             }
-            else if (e.target.value !== this.props.projects[i]._id){
-                return this.setState({modalIsOpen: false});
+            else{
+                this.setState({modalIsOpen: false});
             }
         }
-
-        // for(let i = 0; i < this.props.projects.length; i++){
-        //     console.log(this.props.projects[i])
-        //     if(e.target.value == this.props.projects[i]._id){
-        //         return this.setState({modalIsOpen: true})
-        //     }
-        //     else{
-        //         return this.setState({modalIsOpen: false})
-        //     }
-        // }
+    //         else{
+        
+    //             return this.setState({modalIsOpen: false})
+    //         }
+    //     }
+        
     }
 
       afterOpenModal() {
@@ -85,6 +90,7 @@ class Portfolio extends Component{
 
 
                     {this.props.projects.map(projItem => { 
+       
                      return ( 
                          
             
@@ -95,7 +101,7 @@ class Portfolio extends Component{
                                  <img src={projItem.image}/> 
                                  {/* <img src='https://photos.google.com/u/1/photo/AF1QipOWPVvBb0b7gIbuD4_xhgvBQ63rCWt4OZ1ibQuU'/> */}
                               </div> 
-                             <button value = {projItem._id} onClick={this.openModal}>{projItem.title}</button> 
+                             <button title={projItem.title} onClick={this.openModal}>{projItem.title}</button> 
                                      <Modal
                                          isOpen={this.state.modalIsOpen}
                                          onAfterOpen={this.afterOpenModal}
