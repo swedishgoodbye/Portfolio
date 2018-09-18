@@ -22,10 +22,11 @@ class Portfolio extends Component{
 
     constructor(props){
         super(props);
-        this.state = {
-            modal: false
-        };
         this.props.getProjects();
+        this.state = {
+            modal: false,
+            projects: this.props.projects
+        };
         this.openModal = this.openModal.bind(this);
         this.afterOpenModal = this.afterOpenModal.bind(this);
         this.closeModal = this.closeModal.bind(this);
@@ -37,18 +38,25 @@ class Portfolio extends Component{
 
     openModal = e => {
         // console.log(e.target.value)
-        // console.log(this.state)
-        // if(e.target.value == this.props.projects._id){
-        // this.setState({modalIsOpen: true});
-
         for(let i = 0; i < this.props.projects.length; i++){
+            console.log(this.props.projects[i])
             if(e.target.value == this.props.projects[i]._id){
-                this.setState({modalIsOpen: true})
+                return this.setState({modalIsOpen: true});
             }
-            else{
-                this.setState({modalIsOpen: false})
+            else if (e.target.value !== this.props.projects[i]._id){
+                return this.setState({modalIsOpen: false});
             }
         }
+
+        // for(let i = 0; i < this.props.projects.length; i++){
+        //     console.log(this.props.projects[i])
+        //     if(e.target.value == this.props.projects[i]._id){
+        //         return this.setState({modalIsOpen: true})
+        //     }
+        //     else{
+        //         return this.setState({modalIsOpen: false})
+        //     }
+        // }
     }
 
       afterOpenModal() {
@@ -61,14 +69,14 @@ class Portfolio extends Component{
       }
     
 
-    toggle() {
-        this.setState({
-          modal: !this.state.modal
-        });
-      }
+    // toggle() {
+    //     this.setState({
+    //       modal: !this.state.modal
+    //     });
+    //   }
 
     render(){
-        console.log('port state', this)
+        // console.log('port state', this)
         // const data = this.props.data;
         return(
             <div className="portfolio-page">     
