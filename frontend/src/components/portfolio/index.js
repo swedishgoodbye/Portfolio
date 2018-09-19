@@ -38,24 +38,32 @@ class Portfolio extends Component{
     }
 
     openModal = e => {
-        e.preventDefault();
+        // e.preventDefault();
         let projects = this.props.projects;
         console.log(e.target);
 
         // if(e.target.value == this.props.projects)
-        // this.setState({modalIsOpen: true});
-        console.log(projects)
+        this.setState({modalIsOpen: true});
 
-        for(let i = 0; i <= projects.length; i++){
-     
-            if(e.target.value == projects[i].title){
-                console.log(this.props.projects[i]);
-                this.setState({modalIsOpen: true})
-            }
-            else{
-                this.setState({modalIsOpen: false});
-            }
+        if(!e.target){
+            this.setState({modalIsOpen: true})
         }
+
+
+
+
+        // console.log(projects[0].title)
+
+        // for(let i = 0; i <= projects.length; i++){
+     
+        //     if(e.target.value == projects[i].title){
+        //         console.log(this.props.projects[i]);
+        //         this.setState({modalIsOpen: true})
+        //     }
+        //     else{
+        //         this.setState({modalIsOpen: false});
+        //     }
+        // }
     //         else{
         
     //             return this.setState({modalIsOpen: false})
