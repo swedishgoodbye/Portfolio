@@ -40,13 +40,14 @@ class Portfolio extends Component{
 
                                 <h3 className="card-link">URL:</h3>
 
-                                    <a href="http://www.lambdarandomizer.com/">http://www.lambdarandomizer.com/</a>
+                                    <a href="http://www.lambdarandomizer.com/"><p>http://www.lambdarandomizer.com/</p> </a>
 
                             </div>
 
                             <div className="card-bottom">
 
                                 <ul className="card-stack"> Current Tech Stack:
+                        
                                     <li>HTML/CSS</li>
                                     <li>Bootstrap / Reactstrap</li>
                                     <li>Javascript</li>
@@ -60,7 +61,19 @@ class Portfolio extends Component{
                                     
                                 </ul>
 
-                                <p className="card-desc"></p>                       
+                                <p className="card-desc">
+
+                                    I worked on this app with a team of four other students for our Capstone Project at the end of the Lambda School course. 
+                                    It's an app geared towards teachers that allows them to input the students in their class and randomly select their students to
+                                    participate.
+                                    <br/>
+
+                                    Currently it features an "All Go" mode that makes sure every student is called before reshuffling the class and picking through it again;
+                                    as well a mode that tracks a class's participation over time on a graph.
+
+
+
+                                </p>                       
 
                             </div>
 
@@ -81,14 +94,13 @@ class Portfolio extends Component{
 
                                 <h3 className="card-link">URL:</h3>
 
-                                    <a href="">You're Here Already!</a>
+                                    <a href=""><p>You're Here Already!</p></a>
 
                             </div>
 
                             <div className="card-bottom">
 
                                 <ul className="card-stack"> Current Tech Stack:
-                                <li>HTML/CSS</li>
                                     <li>HTML / CSS</li>
                                     <li>Javascript</li>
                                     <li>React / Redux</li>
@@ -98,7 +110,15 @@ class Portfolio extends Component{
                                     <li>Heroku</li>
                                 </ul>
 
-                                <p className="card-desc"></p>
+                                <p className="card-desc">
+
+                                    This website is rebuilt from my original personal one. 
+                                    I have reworked it into a React / Redux app that utilizes a MongoDB backend. 
+                                    <br/>
+                                    In between other projects I will be expanding upon this website and adding more features to 
+                                    show off what I've been learning. Check back occasionally and you'll see something new.
+
+                                </p>
 
                             </div>
 
@@ -109,7 +129,7 @@ class Portfolio extends Component{
                     
                     <div id="portfolio-panel" className="portfolio-panel git-panel">
 
-                        <div className="portfolio-card random-card">
+                        <div className="portfolio-card git-card">
 
                             <div className="card-top">
 
@@ -119,7 +139,7 @@ class Portfolio extends Component{
 
                                 <h3 className="card-link">URL:</h3>
 
-                                    <a href="https://github.com/swedishgoodbye">https://github.com/swedishgoodbye</a>
+                                    <a href="https://github.com/swedishgoodbye"><p>https://github.com/swedishgoodbye</p></a>
 
                             </div>
 

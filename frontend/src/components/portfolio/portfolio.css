@@ -49,29 +49,58 @@
 
 .portfolio-card{
     display: none;
+    
 }
 
 .portfolio-panel:hover .portfolio-card{
-    background: rgb(0, 19, 37);
-    height: 90%;
-    width: 80%;
     display: flex;
     flex-direction: column;
     align-content: space-between;
+    height: 90%;
+    width: 80%;
+    background: rgb(0, 19, 37);
+    color: rgb(164, 152, 136);
+    border: 5px solid rgb(164, 152, 136);
+    padding: 2%;
     
 }
+
 
 .card-top{
-    border: 1px red solid;
-    height: 30%;
     
+    /* border: 1px red solid; */
+    height: 30%;
 }
 
+.card-title{
+    font-weight: 700;
+    margin-top: 0%;
+}
 
+.card-top p{
+    font-weight: 600;
+    /* text-decoration: underline; */
+    border-bottom: 2px solid rgb(164, 152, 136);
+}
 
 .card-bottom{
-    border: 1px yellow solid;
+    /* border: 1px yellow solid; */
     height: 70%;
+}
+/* 
+.card-bottom ul{
+    text-decoration: underline;
+} */
+
+.card-stack{
+    margin-top: 0%;
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+
+.card-desc{
+    text-decoration: underline;
+    font-weight: 700;
 }
 
 #portfolio-panel{
