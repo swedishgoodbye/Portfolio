@@ -8,7 +8,7 @@ class Contact extends Component{
             <div className="contact-page">
                     <div class="inner">
             
-            <h1>Get In Touch</h1>
+            <h1 className="contact-title">Get In Touch</h1>
             
             <p class="contactlist">
                 <a href="https://www.linkedin.com/in/brett-sullivan-aa4930154" target="_blank" contact="contact-item">Brett Sullivan</a>

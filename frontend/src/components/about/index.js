@@ -7,7 +7,9 @@ class About extends Component{
     render(){
         return(
             <div className='about-page'>
-                <p class="about-text">
+
+            <h1 className="about-title"> About Me </h1>
+                {/* <p class="about-text">
         
         <div class="about-text p-left">
             I am a web development and programming student at Lambda School.
@@ -49,7 +51,7 @@ class About extends Component{
             </div>
             
 
-            </p>
+            </p> */}
             
             </div>
         )

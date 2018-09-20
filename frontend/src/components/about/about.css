@@ -1,3 +1,24 @@
 .about-page{
     height: 960px;
+    padding: 1%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: flex-start;
+    background: #1E3D5A;
+}
+
+.about-title{
+    text-align: center;
+    font-size: 605%;
+    margin-right: 0%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 400%;
+    color: rgb(164, 152, 136);
+    background: rgb(0, 19, 37);
+    margin-top: 0%;
+    padding: 2% 0;
+    border: 5px solid rgb(164, 152, 136);
+    height: 9%;
+    width: 100%;
 }

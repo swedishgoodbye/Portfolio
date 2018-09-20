@@ -13,7 +13,8 @@ a{
     padding-left: 1%;
     margin-bottom: 4px;
     border-bottom: solid white 5px;
-    background-color: rgb(24, 60, 77, .8);
+    background: rgb(0, 19, 37);
+border: 5px solid rgb(164, 152, 136);
   
 }
 .navbar-link {
