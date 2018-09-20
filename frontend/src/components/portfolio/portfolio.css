@@ -33,10 +33,45 @@
     width: 40%;
     height: 80%;
     margin: 0 .5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
+
+/* .portfolio-panel:hover div{
+    background: rgb(0, 19, 37);
+} */
 
 .portfolio-panel:hover{
     opacity: .6;
+}
+
+.portfolio-card{
+    display: none;
+}
+
+.portfolio-panel:hover .portfolio-card{
+    background: rgb(0, 19, 37);
+    height: 90%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    
+}
+
+.card-top{
+    border: 1px red solid;
+    height: 30%;
+    
+}
+
+
+
+.card-bottom{
+    border: 1px yellow solid;
+    height: 70%;
 }
 
 #portfolio-panel{

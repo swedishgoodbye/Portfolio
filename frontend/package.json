@@ -11,6 +11,7 @@
     "netlify-cli": "^1.2.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-mail-form": "^1.0.1",
     "react-modal": "^3.5.1",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",

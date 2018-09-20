@@ -1,5 +1,6 @@
 .contact-page{
-    height: 960px;
+    /* height: 980px; */
+    height: 61%;
     padding: 1%;
     border: 1px solid orange;
     display: flex;
@@ -31,17 +32,70 @@
     border: 5px solid rgb(164, 152, 136);
 }
 
+.inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 80%;
+
+}
+
+.contact-form-components{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.contact-form-components input{
+    margin-bottom: 2%;
+}
+
+.contact-form-components a{
+    margin-top: 4%;
+    background: rgb(0, 19, 37);
+    color: rgb(164, 152, 136);
+    width: 20%;
+    padding: 2% 0%;
+    padding-right: .5%;
+    text-align: center;
+    border: 5px solid rgb(164, 152, 136);
+    font-weight: 600;
+}
+
+.contact-form-components a:hover{
+    background: rgb(86, 124, 140);
+    color: rgb(164, 152, 136);
+    transition: all 0.3s ease;
+}
+/* .contact-form-components textarea{
+    height: 50%;
+} */
+
 .contactlist {
-    background-color: rgb(24, 60, 77);
+    
     opacity: .70;
     font-family: 'Oswald', sans-serif;
-    color: rgb(255, 251, 251);
-    font-size: 230%;
+    
+    font-size: 180%;
     font-weight: 900;
     text-align: center;
     text-decoration: none;
     border-style: solid;
     border-width: 10px;
+    color: rgb(164, 152, 136);
+    background: rgb(0, 19, 37);
+    border: 8px solid rgb(164, 152, 136);
+    padding: .5%;
+    width: 40%;
    
 }
 
@@ -50,10 +104,23 @@
     color: 
 } */
 
-a {
+.contact-linked{
+    opacity: .8;
+}
+
+.contact-linked:hover{
+    opacity: 1;
+}
+
+a{
+    color: rgb(164, 152, 136);
+}
+
+a:hover {
 
     color: rgb(255, 255, 255);
 }
+
 
 #webcell{
     text-decoration: none;

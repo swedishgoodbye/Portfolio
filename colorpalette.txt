@@ -4,3 +4,10 @@ https://color.adobe.com/Tema-de-color-143-color-theme-11338511/
 #57859C mid blue
 #80A4BE light blue
 #E5EfEE whiteish blue
+
+
+rgb(0, 19, 37)
+rgb(2, 50, 65)
+rgb(90, 129, 142)
+rgb(179, 183, 197)
+rgb(164. 152. 136)
