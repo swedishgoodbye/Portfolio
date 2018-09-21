@@ -35,8 +35,8 @@ class App extends Component {
 
         <div className='main'>
         <Route href="#start" ref={(section) => { this.Front = section; }} render={() => <Front />} />
-        <Route href="#about" ref={(section) => { this.About = section; }} render={() => <About />} />
         <Route href="#portfolio" ref={(section) => { this.Portfolio = section; }} render={props => <Portfolio {...props} />} />
+        <Route href="#about" ref={(section) => { this.About = section; }} render={() => <About />} />
         {/* <Route href="#music" ref={(section) => {this.Music = section;}} render={() => <Music />} /> */}
         <Route href="#contact" ref={(section) => {this.Contact = section;}} render={() => <Contact />} /> 
          {/* test */}
@@ -48,8 +48,8 @@ class App extends Component {
         </div>
         <div className='temp-nav'>
           <button onClick={() => scrollToComponent(this.Front, { offset: 0, align: 'top', duration: 800})} className='nav-button'>Start</button>
-          <button onClick={() => scrollToComponent(this.About, { offset: 0, align: 'top', duration: 800})} className='nav-button' >About</button>
           <button onClick={() => scrollToComponent(this.Portfolio, { offset: 0, align: 'top', duration: 800})} className='nav-button'>Portfolio</button>
+          <button onClick={() => scrollToComponent(this.About, { offset: 0, align: 'top', duration: 800})} className='nav-button' >About</button>
           {/* <button onClick={() => scrollToComponent(this.Music, { offset: 0, align: 'top', duration: 800})} className='nav-button'>Music</button> */}
           <button onClick={() => scrollToComponent(this.Contact, { offset: 0, align: 'top', duration: 800})} className='nav-button'>Contact</button>
         </div>

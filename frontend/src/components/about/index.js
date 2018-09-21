@@ -11,60 +11,63 @@ class About extends Component{
             <div className='about-page'>
 
             <h1 className="about-title"> About Me </h1>
-                {/* <p class="about-text">
-        
-        <div class="about-text p-left">
-            I am a web development and programming student at Lambda School.
-           </div>
-
-            <br />
-            
-
-        <div class="about-text p-right">
-           Within the last few months I have learned various languages and frameworks including: JavaScript, C, Python, React, Redux, and more.
-        </div> 
-
-            <br />
-            
-
-            <div class="about-text p-left">
-            Upon completion of my courses, I will focus on front-end development. That doesn't mean I will stop expanding my knowledge and interests with my future experiences and ongoing education.
-            </div>
-            
-            <br />
-            
-
-            <div class="about-text p-right">
-            Aside from programming I play music. I am self taught in almost all the instruments I play (guitar, bass guitar, drums, keyboard). An additional skill I have been working on as a hobby is audio recording and production.
-            </div>
-            
-            <br />
-            
-
-            <div class="about-text p-left">
-            In the hardcore band Dead Split Egos, I have toured and played in cities on both the East and West coasts, including Brooklyn, Seattle, and Denver. 
-            </div>
-
-            <br />
-            
-
-            <div class="about-text p-right">  
-            My life aspiration is a pursuit of balance between my passion for technology and music. 
-            </div>
-            
-
-            </p> */}
 
             <div className="about-content">
 
                 <div className="about-item about-summary">
+
+                    {/* <h3>My name is Brett Sullivan...</h3> */}
+
                     <p>
+                    I am Full Stack Web Developer with a Front-End focus who excels at building out clean and accessible user interfaces. Just as well I've learned that a well-written front-end is still highly dependent on a sturdy foundation. I can just as well dig into the backend and work with REST API's, MongoDB, Django, etc. I have recently graduated from Lambda School's Full-Stack Web & Computer Science course. Currently, I am looking to bring my innovative mindset, artful creativity, and efficient work ethic to a team that I can truly grow with.
+                    </p>
+
+                    <p>
+                    Outside of programming, I have a very strong musical background. I play guitar in the band Dead Split Egos in which I have toured almost the entire United States. We are currently working to write our first full album. Being in this band for over eight years has given me a wealth of knowledge when it comes to working with a team to set and achieve goals, collaborate on ideas, and maintaining the group's morale so everyone stays on track. It also shows that when I passionately believe in what a team is doing I will stay dedicated and push it forward as far as it will go.
                     </p>
                 </div>
 
                 <div className="about-item about-media">
 
-                    <img src="https://lh3.googleusercontent.com/sC4DAqtUclFdw9quV67wIaDyRfwo5JfeT2Og7YI9le7_t2kbZFSFTKyse2dFQRePb1ck8ytp_u4hdxMHzcK2YFEsur0JTamI-LZfIBNzp7VOlCVaXtg9wD09KmKWeuBMOwwn4MLdnZaqhO3koIgiqGo-dOhVfu0bpUfd1mzNQKWRgPmhRnvFFmcgwDyfXu0wtNjjPlDaJY4g2IVXDPSKSRFZFsBBF8Y4OJcDuXp3PSqhIdV6yEhTRzrhXYcOjx4S12Hfiz3QkM_-YK44SxvrO6q0UMUG_7aMtWjnOPpE62KTh-ccPfp7notA2WPmAmnoXVTG-hgHPGf31tmtCFBYCfPI4u4dX_CYzMK0N8mRw0l20a7gDe-Ya6StMC_UiRyXZq4EEMF4MpYATbQifTMXd-X8B1WMpk2I6-nl_CI2oTnf7lHy_mxL-jJbt76JoneF1c6huDBfpt7u-duM_1T39mjciLdAMeWF1CAE4wuyj_4Toj3KVRSyX_kLBR2XDwAbIW-pmOyA3Ry9h5SkIpfdQb-wlfCUXD7Mfup7EsL4wy4RLPjiV1dIlvfZRkzW5OwGgJnIibchdrX46-Tn6gCarNNB4OyPurezqLz7yxh7ySIoeKJ6IkwHEiZWwOR27Q=w361-h362-no" />
+                    <div className="media-top">
+
+                    <img src="https://lh3.googleusercontent.com/rf0oDMu1-N8QKRvA-7mbHGJLBGNUF9JBEFHWjgL2YjnafPYUYjWZcvDZru9ObdwsrIjy_hirdb74o96MjmkZvw5c3bx_L4dmDuux0RnK_q8do63HuYGgZ-sdYBnAaWY77peURn6B_UzmDQjrTSlS6exTzE7zI1TGZXdMvrNxfJSWTvPU2iyNurjdtrqGB0u0624clKtrDkSnUqkEJZIGaO-t6vPDuZ509fuhSBwbAhhEsOZiF6hr6FccBrxK-hLWIW-kPgEvmT4_dzhSlLdxizIPtKjGnxI0PBlwsox5ZiDE-jJWP08JoeMuskB4JQaTfCx4lai47mBykiV4syn5jnOhwFuN6rTWXRNl7DUz-ji5dvS-aJyqDrV4SsiThhfHR9Bs3pCbqbhUQl3Y9OzyInfrxSJb4B3gXLs1v_7E_XIjw-YNOcPnoyIceXj7sMJVnBCvnTS-AsnW_NtPWRDlc5kIdBfk-OU7GLatraKEnjaT4K4vh2stlBI9MNU5Etwk9r4IfH05VlS18hVMym3Jz242Ch3rDbrR-UYi1tYgrbu26DzX3Mw16uerlZa5eSn01jtc4WRgvb4D2MHw7rwD3OPQFZaaVRAihxxdp6lxXykBmY861aPNq_4eYW705g=w1346-h1009-no" />
+
+                    <div>
+                        <h3> Name: </h3>
+                           <p> Brett Sullivan </p>
+                        <h3>  URL:  </h3>
+                            <p> Chicago, Illinois </p>
+                        
+                    </div>
+                    </div>
+
+                    <div className="media-bottom">
+                        <ul> Tech Stack:
+                            <li>HTML / CSS</li>
+                            <li>Javascript</li>
+                            <li>C</li>
+                            <li>Python</li>
+                            <li>React / Redux</li>
+                            <li>Django</li>
+                            <li>Bootstrap</li>
+                            <li>LESS</li>
+                            <li>MongoDB</li>
+                            <li>Axios</li>
+                        </ul>
+                        <ul> Soft Skill Stack: 
+                            <li>Efficient</li>
+                            <li>Independent</li>
+                            <li>Logical</li>
+                            <li>Dependable</li>
+                            <li>Knows Their Role</li>
+                            <li>Empathetic</li>
+                            <li>Patient</li>
+                            <li>Persistent</li>
+                        </ul>
+                    </div>
+
+
                 </div>
                 
                 </div>
