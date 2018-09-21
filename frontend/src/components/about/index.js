@@ -19,7 +19,7 @@ class About extends Component{
                     {/* <h3>My name is Brett Sullivan...</h3> */}
 
                     <p>
-                    I am Full Stack Web Developer with a Front-End focus who excels at building out clean and accessible user interfaces. Just as well I've learned that a well-written front-end is still highly dependent on a sturdy foundation. I can just as well dig into the backend and work with REST API's, MongoDB, Django, etc. I have recently graduated from Lambda School's Full-Stack Web & Computer Science course. Currently, I am looking to bring my innovative mindset, artful creativity, and efficient work ethic to a team that I can truly grow with.
+                    I am a Full Stack Web Developer with a Front-End focus who excels at building out clean and accessible user interfaces. Just as well I've learned that a well-written front-end is still highly dependent on a sturdy foundation. I can just as well dig into the backend and work with REST API's, MongoDB, Django, etc. I have recently graduated from Lambda School's Full-Stack Web & Computer Science course. Currently, I am looking to bring my innovative mindset, artful creativity, and efficient work ethic to a team that I can truly grow with.
                     </p>
 
                     <p>
