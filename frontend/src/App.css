@@ -9,6 +9,11 @@ html, body{
     width: 100%; 
 }
 
+.App{
+    background: rgb(164, 152, 136);
+    font-family: 'Raleway', sans-serif;
+}
+
 /* .tempNav{
     position: fixed; */
     /* bottom: 0; */
@@ -31,34 +36,55 @@ html, body{
     /* top: 0; */
     /* background-size: 100% 145%; */
     /* overflow: hidden; */
-
-
-
+    
+    
+    
     .temp-nav {
         overflow: hidden;
-        background-color: #333;
+        background-color: rgb(0, 19, 37);
         position: fixed; /* Set the navbar to fixed position */
         bottom: 0; /* Position the navbar at the top of the page */
-        width: 100%; /* Full width */
-      }
-      
-      .nav-button {
+        width: 98.3%; /* Full width */
+        margin-left: .85%;
+        display: flex;
+        justify-content: space-evenly;
+        /* padding: 0 1%; */
+    }
+    
+    .nav-button {
         float: left;
         display: block;
-        color: black;
+        background: rgb(0, 19, 37);
+        border: 5px solid rgb(164, 152, 136);
+        /* background: rgb(86, 124, 140); */
+        /* border: rgb(164, 152, 136); */
+        color: rgb(164, 152, 136);
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 17px;
-      }
-      
-      .nav-button:hover {
-        background: #ddd;
-        color: black;
-      }
-      
-      .main {
+        font-family: 'Raleway', sans-serif;
+        font-size: 150%;
+        font-weight: 1000;
+        width: 15%;
+        
+    }
+    
+    .nav-button:hover {
+        /* background: rgb(164, 152, 136); */
+        background: rgb(86, 124, 140);
+        color: rgb(164, 152, 136);
+        /* color: rgb(86, 124, 140); */
+        /* border: rgb(86, 124, 140); */
+        transition: all 0.3s ease;
+    }
+    
+    .main {
         padding: 16px;
+        padding-top: 1px;
         margin-bottom: 50px;
         height: 1500px; /* Used in this example to enable scrolling */
-      }
+    }
+    
+    .main div{
+        margin: .5% 0; 
+    }

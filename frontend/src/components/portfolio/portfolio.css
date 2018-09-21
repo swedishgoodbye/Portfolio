@@ -1,28 +1,110 @@
 .portfolio-page{
     height: 960px;
     padding: 1%;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly; */
+    justify-content: center;
+    background: #1E3D5A;
 }
 
 .portfolio-title{
     text-align: center;
-    font-size: 300%;
+    font-size: 605%;
+    margin-right: 0%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 400%;
+    color: rgb(164, 152, 136);
+    background: rgb(0, 19, 37);
+    margin-top: 0%;
+    padding: 2% 0;
+    border: 5px solid rgb(164, 152, 136);
 }
 
 .portfolio-panels{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
     height: 100%;
 }
 
 .portfolio-panel{
-    border: 1px solid red;
+    border: 2px solid rgb(164, 152, 136);
     width: 40%;
-    height: 67%;
+    height: 80%;
+    margin: 0 .5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* .portfolio-panel:hover div{
+    background: rgb(0, 19, 37);
+} */
+
+.portfolio-panel:hover{
+    opacity: .6;
+}
+
+.portfolio-card{
+    display: none;
+    
+}
+
+.portfolio-panel:hover .portfolio-card{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 90%;
+    width: 80%;
+    background: rgb(0, 19, 37);
+    color: rgb(164, 152, 136);
+    border: 5px solid rgb(164, 152, 136);
+    padding: 2%;
+    
+}
+
+
+.card-top{
+    
+    /* border: 1px red solid; */
+    height: 30%;
+}
+
+.card-title{
+    font-weight: 700;
+    margin-top: 0%;
+}
+
+.card-top p{
+    font-weight: 600;
+    /* text-decoration: underline; */
+    border-bottom: 2px solid rgb(164, 152, 136);
+}
+
+.card-bottom{
+    /* border: 1px yellow solid; */
+    height: 70%;
+}
+/* 
+.card-bottom ul{
+    text-decoration: underline;
+} */
+
+.card-stack{
+    margin-top: 0%;
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+
+.card-desc{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+#portfolio-panel{
+    margin: 0 .5%;
 }
 
 .random-panel{
