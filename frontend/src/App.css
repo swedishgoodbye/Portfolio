@@ -6,12 +6,13 @@ html, body{
     margin: 0;
     padding: 0;
     height: 100%; 
-    width: 100%; 
+    /* width: 100%;  */
 }
 
 .App{
     background: rgb(164, 152, 136);
     font-family: 'Raleway', sans-serif;
+    width: 100%;
 }
 
 /* .tempNav{
@@ -83,6 +84,7 @@ html, body{
         padding-top: 1px;
         margin-bottom: 50px;
         height: 1500px; /* Used in this example to enable scrolling */
+        /* width: 100%; */
     }
     
     .main div{

@@ -38,18 +38,16 @@ class Portfolio extends Component{
 
                                     <p> Lambda Randomizer </p>
 
-                                <h3 className="card-link">URL:</h3>
+                                <a href="http://www.lambdarandomizer.com/" className="card-link">URL</a>
 
-                                    <a href="http://www.lambdarandomizer.com/"><p>http://www.lambdarandomizer.com/</p> </a>
+                                    
 
                             </div>
 
-                            <div className="card-bottom">
+                             <div className="card-bottom">
 
                                 <ul className="card-stack"> Current Tech Stack:
-                        
-                                    <li>HTML/CSS</li>
-                                    <li>Bootstrap / Reactstrap</li>
+                                    <li>Bootstrap</li>
                                     <li>Javascript</li>
                                     <li>React / Redux</li>
                                     <li>Node.js / MongoDB</li>
@@ -60,6 +58,7 @@ class Portfolio extends Component{
                                     <li>Heroku</li>
                                     
                                 </ul>
+                            
 
                                 <p className="card-desc">
 
@@ -73,9 +72,11 @@ class Portfolio extends Component{
 
 
 
-                                </p>                       
+                                </p>
 
-                            </div>
+                                                      
+
+                            </div> 
 
 
                         </div>
@@ -86,15 +87,9 @@ class Portfolio extends Component{
 
                         <div className="portfolio-card port-card">
 
-                            <div className="card-top">
+                            <div className="card-top port-card-top">
 
-                                <h3 className="card-title"> Project Name: </h3>
-
-                                    <p> This Website! </p>
-
-                                <h3 className="card-link">URL:</h3>
-
-                                    <a href=""><p>You're Here Already!</p></a>
+                                <h3 className="card-title"> This Website </h3>
 
                             </div>
 
