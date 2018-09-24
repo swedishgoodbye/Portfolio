@@ -43,24 +43,24 @@ class About extends Component{
                     </div>
 
                     <div className="media-bottom">
-                        <ul> Tech Stack:
+                        <ul className="tech-list"> Tech Stack:
                             <li>HTML / CSS</li>
                             <li>Javascript</li>
                             <li>C</li>
                             <li>Python</li>
-                            <li>React / Redux</li>
+                            <li>React  Redux</li>
                             <li>Django</li>
                             <li>Bootstrap</li>
                             <li>LESS</li>
                             <li>MongoDB</li>
                             <li>Axios</li>
                         </ul>
-                        <ul> Soft Skill Stack: 
+                        <ul className="soft-list"> Soft Skill Stack: 
                             <li>Efficient</li>
-                            <li>Independent</li>
+                            <li>Trained </li>
                             <li>Logical</li>
                             <li>Dependable</li>
-                            <li>Knows Their Role</li>
+                            <li>Leadership</li>
                             <li>Empathetic</li>
                             <li>Patient</li>
                             <li>Persistent</li>

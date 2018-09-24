@@ -1,5 +1,6 @@
 .portfolio-page{
-    height: 90vh;
+    height: 100vh;
+    /* height: 960px; */
     padding: 1%;
     display: flex;
     flex-direction: column;
@@ -78,14 +79,14 @@
 .card-title{
     font-weight: 700;
     margin: 0%;
-    font-size: 2.8vw;
+    font-size: 2.6vw;
 }
 
 .card-top p{
     font-weight: 600;
     /* text-decoration: underline; */
     border-bottom: 2px solid rgb(164, 152, 136);
-    font-size: 2.9vw;
+    font-size: 2.6vw;
     margin: 5%;
     margin-bottom: 8%;
 }
@@ -126,7 +127,7 @@
     /* display: none; */
     /* text-decoration: underline;*/
     font-weight: 800; 
-    font-size: 2.2vw;
+    font-size: 2vw;
     text-align: center;
     margin: 0;
     margin-top: 15%;
@@ -136,6 +137,17 @@
 
 .card-button{
     width: 70%;
+    color: rgb(164, 152, 136);
+    background: rgb(0, 19, 37);
+    margin-top: 2%;
+    min-height: 5%;
+    transition: all 0.3s ease;
+}
+
+.card-button:hover{
+background: rgb(86, 124, 140);
+color: rgb(164, 152, 136);
+transition: all 0.3s ease;
 }
 
 #portfolio-panel{
@@ -201,6 +213,27 @@
 .git-link{
     font-size: 3vw;
 }
+
+/* @media screen and (min-width: 430px){
+    .card-desc{
+        font-size: 1.8vw;
+        margin-top: 20%;
+    }
+}
+
+@media screen and (min-width: 502px){
+    .card-desc{
+        font-size: 1.6vw;
+        margin-top: 28%;
+    }
+}
+
+@media screen and (min-width: 622px){
+    .card-desc{
+        font-size: 1.4vw;
+        margin-top: 30%;
+    }
+} */
 
 @media screen and (min-with: 860px){
 
