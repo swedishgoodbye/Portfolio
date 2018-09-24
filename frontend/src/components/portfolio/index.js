@@ -12,14 +12,93 @@ class Portfolio extends Component{
         super(props);
         this.props.getProjects();
         this.state = {
-
+            toggle: false,
         };
 
     }
 
+    clickHandler = () => {
+        this.setState({toggle: !this.state.toggle});
+        console.log(this.state.toggle);
+    }
 
 
     render(){
+
+        let randBottomToggle;
+        let portBottomToggle;
+        let buttonLabel;
+
+
+        if(this.state.toggle == false){
+            randBottomToggle = (
+                                 <ul className="card-stack"> Tech Stack: 
+                                     <li>Bootstrap</li>
+                                    <li>Javascript</li>
+                                    <li>React / Redux</li> 
+                                     <li>Node.js / MongoDB</li>
+                                    <li>Git</li>
+                                    <li>Mongoose</li> 
+                                     <li>Axios</li>
+                                    <li>Jquery</li>
+                                    <li>Heroku</li>
+                                    
+                                </ul>
+            
+
+            );
+
+            portBottomToggle = (
+                <ul className="card-stack port-card-stack"> Tech Stack:
+                <li>HTML / CSS</li>
+                <li>Javascript</li>
+                <li>React / Redux</li>
+                <li>Node.js / MongoDB</li>
+                <li>Git</li>
+                <li>Mongoose</li>
+                <li>Heroku</li>
+            </ul>
+            )
+
+            
+            buttonLabel = (<button onClick={this.clickHandler} className="card-button">About</button>);
+        }
+
+        else if(this.state.toggle == true){
+            randBottomToggle = (
+                <p className="card-desc">
+
+                I worked on this app with a team of four other students for our Capstone Project. 
+                It's an app geared towards teachers that allows them to input the students in their class and randomly select their students to
+                participate.
+                <br/>
+
+                It features an "All Go" mode that makes sure every student is called before reshuffling the class and picking through it again;
+                as well as a class participation tracker.
+
+            </p>
+            );
+
+            portBottomToggle = (
+
+                <p className="card-desc port-card-desc">
+
+                This website is rebuilt from my original personal one. 
+                I have reworked it into a React / Redux app that utilizes a MongoDB backend. 
+                <br/>
+                In between other projects I will be expanding upon this website and adding more features to 
+                show off what I've been learning. Check back occasionally and you'll see something new.
+
+            </p>
+
+            )
+
+            buttonLabel = (<button onClick={this.clickHandler} className="card-button">Stack</button>);
+        }
+
+    
+
+
 
         return(
             <div className="portfolio-page">     
@@ -46,21 +125,25 @@ class Portfolio extends Component{
 
                              <div className="card-bottom">
 
-                                <ul className="card-stack"> Current Tech Stack:
-                                    <li>Bootstrap</li>
+                             {randBottomToggle}
+
+                             {buttonLabel}
+
+                                {/* <ul className="card-stack"> Tech Stack: */}
+                                    {/* <li>Bootstrap</li>
                                     <li>Javascript</li>
-                                    <li>React / Redux</li>
-                                    <li>Node.js / MongoDB</li>
+                                    <li>React / Redux</li> */}
+                                    {/* <li>Node.js / MongoDB</li>
                                     <li>Git</li>
-                                    <li>Mongoose</li>
-                                    <li>Axios</li>
+                                    <li>Mongoose</li> */}
+                                    {/* <li>Axios</li>
                                     <li>Jquery</li>
                                     <li>Heroku</li>
                                     
-                                </ul>
+                                </ul> */}
                             
 
-                                <p className="card-desc">
+                                {/* <p className="card-desc">
 
                                     I worked on this app with a team of four other students for our Capstone Project at the end of the Lambda School course. 
                                     It's an app geared towards teachers that allows them to input the students in their class and randomly select their students to
@@ -72,7 +155,7 @@ class Portfolio extends Component{
 
 
 
-                                </p>
+                                </p> */}
 
                                                       
 
@@ -93,9 +176,13 @@ class Portfolio extends Component{
 
                             </div>
 
-                            <div className="card-bottom">
+                            <div className="card-bottom port-card-bottom">
 
-                                <ul className="card-stack"> Current Tech Stack:
+                                {portBottomToggle}
+
+                                {buttonLabel}
+
+                                {/* <ul className="card-stack"> Current Tech Stack:
                                     <li>HTML / CSS</li>
                                     <li>Javascript</li>
                                     <li>React / Redux</li>
@@ -113,7 +200,7 @@ class Portfolio extends Component{
                                     In between other projects I will be expanding upon this website and adding more features to 
                                     show off what I've been learning. Check back occasionally and you'll see something new.
 
-                                </p>
+                                </p> */}
 
                             </div>
 
@@ -128,13 +215,13 @@ class Portfolio extends Component{
 
                             <div className="card-top">
 
-                                <h3 className="card-title"> Github Username: </h3>
+                                <h3 className="card-title git-title"> Github Username: </h3>
 
-                                    <p>swedishgoodbye</p>
+                                    <p id="git-name">swedishgoodbye</p>
 
-                                <h3 className="card-link">URL:</h3>
+                                <h3 className="card-link "><a className="git-link" href="https://github.com/swedishgoodbye">URL</a></h3>
 
-                                    <a href="https://github.com/swedishgoodbye"><p>https://github.com/swedishgoodbye</p></a>
+                                    
 
                             </div>
 

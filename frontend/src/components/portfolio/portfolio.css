@@ -70,35 +70,41 @@
 .card-top{
     
     /* border: 1px red solid; */
-    height: 30%;
-    font-size: 80%;
+    height: 18%;
+    font-size: 70%;
     text-align: center;
 }
 
 .card-title{
     font-weight: 700;
-    margin-top: 0%;
-    font-size: 12px;
+    margin: 0%;
+    font-size: 2.8vw;
 }
 
 .card-top p{
     font-weight: 600;
     /* text-decoration: underline; */
     border-bottom: 2px solid rgb(164, 152, 136);
-    font-size: 12px;
+    font-size: 2.9vw;
+    margin: 5%;
+    margin-bottom: 8%;
 }
 
 .card-link{
     text-align: center;
     border: 2px solid rgb(164, 152, 136);
-    padding: 2% 4%;
+    padding: 0% 5%;
     
 }
 
 .card-bottom{
     /* border: 1px yellow solid; */
     height: 70%;
-    padding: 3.5%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
 }
 /* 
 .card-bottom ul{
@@ -106,19 +112,30 @@
 } */
 
 .card-stack{
-    margin-top: 0%;
+    margin-top: 15%;
     text-decoration: underline;
-    letter-spacing: 1px;
-    font-size: 10px;
-    padding: 0% 10%;
+    letter-spacing: .5px;
+    font-size: 3.2vw;
+    padding: 0% 0%;
     text-align: center;
+    list-style: none;
 }
 
 
 .card-desc{
-    display: none;
-    /* text-decoration: underline;
-    font-weight: 700; */
+    /* display: none; */
+    /* text-decoration: underline;*/
+    font-weight: 800; 
+    font-size: 2.2vw;
+    text-align: center;
+    margin: 0;
+    margin-top: 15%;
+    
+    padding: .5% 5%;
+}
+
+.card-button{
+    width: 70%;
 }
 
 #portfolio-panel{
@@ -127,13 +144,13 @@
 
 .random-panel{
     background-image: url("https://lh3.googleusercontent.com/8xgygl_YGDnqt0-eCX5tY0HPC-PW_3OVtS24a9sm0eM8XGIuo8rGHc6knj3upLz3rGLVfZUEd4Q-BLljsXm5Q736a5rNFLS06bAtEzckTnXytyXnR6vq0NWnFNRt3RERFtZJX5Zrrs-yaI91dLbsY_vBP5dh33S63gkkxERFrPo6iZATxokDxtBKdtRumL2g8ikLOs-WfjVZmwhHvLwfeNBcFRq78W4ui5wIVc2cMnEKLDiPUMQHAYflBqE5JPnrnvj7chdUmKrHfAM6uVrS7JGw0HzZ0SbOTcYUrD5pd9P9T22aKQmaqOALYWoZudLXKtdFlSJRjPOXBBWUlI1jc9VYAZhynj_37WlIILGlZOPZ3GnsMbmICHaD6fpm34XgtqUmtwZCs6ZD-Wo8b1HJqYrT2Uo5xjNt2zfxyQzrCHgShvvxSaZr1JvRJRil3sv-QpNo55r3Ey-JgHmktkdZpJEivNPAGpIrTO3vFcTYJ7eTaT1T9ie-5DFNuEC7ISeA7G5miRUfxK1PTuRX03W3aglmG8QNBska5qZ1Naxj6XfhqML5pATqHtoq6K9BQJEpbhq0LdH5Gc29UoqyApGyBhzik_yiqi5FVJGMPLHiwwZj5iHdWSgJP23s2rCdEg=w610-h958-no");
-    /* background-size: cover;
-    background-repeat: no-repeat; */
+    background-size: cover;
+    background-repeat: no-repeat;
     background-size: 100% 148%;
 }
 
 .port-panel{
-    background-image: url("../../media/welcome-long2.PNG");
+    background-image: url("https://lh3.googleusercontent.com/03QOQVorbctukMpFTHHT4e5lCUzbur_38ZhCYWPvLYSlUo8ZIte710FjxThIr43Izm6I9PLtmUezHlI1SEJc7iIP-qdvyPmTtV2Kp8pWII3K-tkkqqP5q3sAlmd6vLbFZA3bLyn-e_0-R6Kfaztf2Hh3eeyC1bm0QxJzt0H6m2uoiXzECB-UZLEC3tu3AiW3ZXRi9XahmPYjbAHw-r8q3dPLpTGYdJh_VOe2w9S8eH7rJ-j_pSenim1kEv5DaN477uH09_BPsbOBIZNu7dTeVEvBnb4XK8BLtJaAHB_EJf_1GXn81BJ9trUzTn86nlS1lxaEjLcsrG84qa6e_Usnpl4l73t0c8pQJ3FkGxhVp7hmsmxWpcwVG0CXogjIGLA0ZEhwEUB2P4Cz7ALz2zqtw141Qgf4MJVu2CUvgiSwdgMegaJ7bZlfhWYwFVFw353wAjYyZ3XUzUGckhSGWm8cu33Kbgrvk4Rg3wElZtqgRlVlE0GDDzcBQjfIsSMUurMFIz_PAGRyNA07gXEUlMZBPWnZXkQcocao92IIGby1XTuRXneutrqfW2lxbzOtLV99c83d_qUvSYrkNJAzNZrXZ6Wfm7Ix5u367iwYtMQviSnjqzENcDKl5LEo2t-KTQ=w610-h958-no");
     /* background-repeat: no-repeat; */
     background-size: 100% 100%;
 }
@@ -144,15 +161,45 @@
     align-items: center;
     border-bottom: 2px solid rgb(164, 152, 136);
     height: 20%;
+    /* margin-bottom: 50% */
 }
 
 .port-card-top .card-title{
-    margin-bottom: 0%;
+    margin-top: 30%;
+    border-bottom: 2px solid rgb(164, 152, 136);
+}
+
+.port-card-bottom{
+    margin-top: 51%;
+}
+
+.port-card-stack{
+    margin-top: 30%;
+}
+
+.port-card-desc{
+    margin-top: 30%;
+    font-size: 2.5vw;
+    margin-bottom: 5%;
+    
 }
 
 .git-panel{
     background-image: url("https://lh3.googleusercontent.com/Va3tnfq64AP-Yyb4Yvx_Y5vNSbdoymfApthgSOvn-YrVlR-dX7H-AXNZz_9LEOu4pLTQzgy9dC5vQQgrjt78BA-aPAAhzHqYO56ktd1T8LDySNmPbZgTZtms5OU5XA4XAv0_MsPkWMYGyxX5gLf_ReQwMs85TzT1qOUCDQNzlIXIddMc0pwV4TQUABoYbr_nNC7luy_tkcVaznf6GsRiJfgdpIBPt69cXBg4CprJS06V6gvF6XuwtHg9fK3GBVcL6yh8NkDs352OBrBrCT7dVwgAgfW3ligr3swX2jqd9rdcCr2247j3cNvCE07yE06hDzTY9zz1QPXJYU06NcXeSA2m_325_1bYT8LxtZ4-OlstqsTEGyXobPFCdey0Eav1WCdcSfdv7XGfNnf4Cofhwrd7SVBelqS2YyWr07Ij2Ime-l8g8C3wCfDO4hiP5inUUROG2k3HwzF1dZh1Xe5w0C71AcD4TSstkf9BAK80oe1QleYhtciLqEncF6ZoHKg6E3PuQVt7UmjpG853w6kEJYfX8tOm9FT4yIkPAF3tsF_HGVKC8GZ2iUGjsNoJ2C8De7_k4Q3YWKaMifPX0VvTiy5TR_okJMagbnBZR6upG6mf3VTRSWi1BOfbUG0hRQ=w610-h958-no");
     background-size: 100% 100%;
+}
+
+.git-title{
+    text-align: center;
+    font-size: 2.6vw;
+}
+
+#git-name{
+    font-size: 2.6vw;
+}
+
+.git-link{
+    font-size: 3vw;
 }
 
 @media screen and (min-with: 860px){
