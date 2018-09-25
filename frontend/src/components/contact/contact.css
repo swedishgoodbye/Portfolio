@@ -20,10 +20,9 @@
 
 .contact-title{
     text-align: center;
-    font-size: 605%;
     margin-right: 0%;
     font-family: 'Raleway', sans-serif;
-    font-size: 8vw;
+    font-size: 5vw;
     color: rgb(164, 152, 136);
     background: rgb(0, 19, 37);
     margin-top: 0%;
@@ -55,7 +54,8 @@
 }
 
 .contact-form-components input{
-    margin-bottom: 2%;
+    margin-bottom: 1%;
+    height: 15%;
 }
 
 .contact-form-components a{
@@ -84,7 +84,7 @@
     
     opacity: .70;
     font-family: 'Oswald', sans-serif;
-    font-size: 180%;
+    font-size: 5vw;
     font-weight: 900;
     text-align: center;
     text-decoration: none;
@@ -106,7 +106,7 @@
 
 .contact-linked{
     opacity: .8;
-    width: 40vw;
+    width: 25vw;
 }
 
 .contact-linked:hover{
@@ -129,4 +129,14 @@ a:hover {
 
 #mobilecell{
     display: none;
+}
+
+@media screen and (min-width: 900px){
+    .contactlist{
+        font-size: 3vw;
+        width: 68vw;
+    }
+    .contact-linked{
+        width: 15vw;
+    }
 }
