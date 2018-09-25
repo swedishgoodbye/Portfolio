@@ -219,7 +219,7 @@ class Portfolio extends Component{
 
                                     <p id="git-name">swedishgoodbye</p>
 
-                                <h3 className="card-link "><a className="git-link" href="https://github.com/swedishgoodbye">URL</a></h3>
+                                <h3 className="card-link git-card-link"><a className="git-link" href="https://github.com/swedishgoodbye">URL</a></h3>
 
                                     
 

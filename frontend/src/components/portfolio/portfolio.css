@@ -56,7 +56,8 @@
 .portfolio-panel:hover .portfolio-card{
     display: flex;
     flex-direction: column;
-    align-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
     height: 90%;
     width: 80%;
     background: rgb(0, 19, 37);
@@ -88,7 +89,7 @@
     border-bottom: 2px solid rgb(164, 152, 136);
     font-size: 2.6vw;
     margin: 2% 0 0 0;
-    margin-bottom: 8%;
+    margin-bottom: 4%;
 }
 
 .card-link{
@@ -212,8 +213,14 @@ transition: all 0.3s ease;
     font-size: 2.6vw;
 }
 
+.git-card-link{
+    width: 90%;
+    /* align-self: center; */
+}
+
 .git-link{
     font-size: 1.8vw;
+    width: 40%;
 }
 
  @media screen and (min-width: 430px){
@@ -252,11 +259,11 @@ transition: all 0.3s ease;
 @media screen and (min-width: 750px){
     
     .card-stack{
-        font-size: 1vw;
+        font-size: 2vw;
         margin-top: 20%;
     }
     .card-desc{
-        font-size: 1vw;
+        font-size: 1.5vw;
         margin-top: 22%;
     }
 }
@@ -268,16 +275,21 @@ transition: all 0.3s ease;
         font-size: 2.2vw;
     }
     .card-stack{
-        margin-top: 18%;
+        margin-top: 45%;
     }
 }
 
+@media screen and (min-width: 1096px){
+    .card-desc{
+        font-size: 1.3vw;
+    }
+}
 @media screen and (min-width: 1168px){
     .card-top p{
         font-size: 2vw;
     }
     .card-stack{
-        font-size: 1vw;
+        font-size: 1.3vw;
     }
     .card-desc{
         font-size: 1.3vw;
@@ -286,6 +298,12 @@ transition: all 0.3s ease;
 
 @media screen and (min-width: 1344px){
     .card-desc{
+        font-size: 1.2vw;
+    }
+}
+
+@media screen and (min-width: 1598px){
+    .card-stack{
         font-size: 1.2vw;
     }
 }
