@@ -23,7 +23,7 @@ class About extends Component{
                     </p>
 
                     <p>
-                    Outside of programming, I have a very strong musical background. I play guitar in the band Dead Split Egos in which I have toured almost the entire United States. We are currently working to write our first full album. Being in this band for over eight years has given me a wealth of knowledge when it comes to working with a team to set and achieve goals, collaborate on ideas, and maintaining the group's morale so everyone stays on track. It also shows that when I passionately believe in what a team is doing I will stay dedicated and push it forward as far as it will go.
+                    Outside of programming, I have a very strong musical background. I play guitar in the band Dead Split Egos in which I have toured almost the entire United States. We are currently working to write our first full album. Being in this band has given me a wealth of knowledge when it comes to working with a team to set and achieve goals, collaborate on ideas, and maintaining the group's morale so everyone stays on track. It's also an example that when I passionately believe in what a team is doing I will stay dedicated and push it forward as far as it will go.
                     </p>
                 </div>
 

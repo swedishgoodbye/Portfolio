@@ -95,6 +95,7 @@
     text-align: center;
     border: 2px solid rgb(164, 152, 136);
     padding: 0% 5%;
+    font-size: 2vw;
     
 }
 
@@ -140,7 +141,8 @@
     color: rgb(164, 152, 136);
     background: rgb(0, 19, 37);
     margin-top: 2%;
-    min-height: 5%;
+    min-height: 7%;
+    font-size: 1.5vw;
     transition: all 0.3s ease;
 }
 
@@ -211,7 +213,7 @@ transition: all 0.3s ease;
 }
 
 .git-link{
-    font-size: 3vw;
+    font-size: 1.8vw;
 }
 
  @media screen and (min-width: 430px){
@@ -255,7 +257,7 @@ transition: all 0.3s ease;
     }
     .card-desc{
         font-size: 1vw;
-        margin-top: 20%;
+        margin-top: 22%;
     }
 }
 
@@ -277,6 +279,9 @@ transition: all 0.3s ease;
     .card-stack{
         font-size: 1vw;
     }
+    .card-desc{
+        font-size: 1.3vw;
+    }
 }
 
 @media screen and (min-width: 1344px){
@@ -289,18 +294,21 @@ transition: all 0.3s ease;
     .card-desc{
         margin-top: 20%;
     }
+    .card-desc{
+        font-size: 1.1vw;
+    }
 }
 
 
-@media screen and (min-width: 1800px){
+/* @media screen and (min-width: 1800px){
     .card-desc{
         margin-top: 10%;
         font-size: .51vw;
     }
     
-}
+} */
 
-@media screen and (min-width: 1820px){
+@media screen and (min-width: 1800px){
     .card-desc{
         margin-top: 15%;
         font-size: 1vw;
