@@ -34,7 +34,7 @@ class App extends Component {
         {/* <Nav /> */}
 
         <div className='main'>
-        <Route href="#start" ref={(section) => { this.Front = section; }} render={() => <Front />} />
+        <Route href="#start" ref={(section) => { this.Front = section; }} render={() => <Front className = "main-item" />} />
         <Route href="#portfolio" ref={(section) => { this.Portfolio = section; }} render={props => <Portfolio {...props} />} />
         <Route href="#about" ref={(section) => { this.About = section; }} render={() => <About />} />
         {/* <Route href="#music" ref={(section) => {this.Music = section;}} render={() => <Music />} /> */}

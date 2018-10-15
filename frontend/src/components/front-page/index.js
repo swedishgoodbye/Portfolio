@@ -6,7 +6,7 @@ class Front extends Component{
 
     render(){
         return( 
-            <div className = 'front-page'>
+            <div className = 'front-page main-item'>
                 <div className = 'front-text'>
                     Welcome
                 </div>
