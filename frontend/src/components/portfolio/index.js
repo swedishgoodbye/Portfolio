@@ -13,6 +13,7 @@ class Portfolio extends Component{
         this.props.getProjects();
         this.state = {
             toggle: false,
+            testArr: [null, '0', '1', '2', '3', null]
         };
 
     }
@@ -43,6 +44,16 @@ class Portfolio extends Component{
                     <div className="portfolio-display-top">
 
                         <div className="portfolio-display-item">
+
+                            <div className="portfolio-display-media">
+
+                                <div className="portfolio-display-pic">
+                                </div>
+
+                                <div className="portfolio-display-title">
+                                </div>
+
+                            </div>
 
                         </div>
 
