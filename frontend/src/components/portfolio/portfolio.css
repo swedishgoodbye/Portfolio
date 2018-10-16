@@ -39,17 +39,51 @@
 
 .portfolio-display-top{
     border: 2px solid green;
-    width: 20%;
-    height: 20%;
+    width: 98%;
+    height: 75%;
+    background: #1E3D5A;
 }
 
 .portfolio-display-bottom{
     border: 2px solid red;
-    width: 20%;
-    height: 20%;
+    width: 80%;
+    height: 15%;
+    background: #1E3D5A;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
+.portfolio-display-arrow-left{
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid green;
+}
 
+.portfolio-display-arrow-right{
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid green;
+}
+
+.portfolio-display-preview{
+    width: 60%; 
+    height: 80%; 
+    border: 1px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.portfolio-display-thumbItem{
+    border: 1px solid red;
+    width: 15%;
+    height: 80%;
+}
 
 .portfolio-panels{
     display: flex;

@@ -17,8 +17,16 @@ class Portfolio extends Component{
 
     }
 
+    clickRightHandler = () => {
+        // this.setState({toggle: !this.state.toggle});
+        console.log('right', this);
+    }
+    clickLeftHandler = () => {
+        // this.setState({toggle: !this.state.toggle});
+        console.log('left', this);
+    }
     clickHandler = () => {
-        this.setState({toggle: !this.state.toggle});
+        // this.setState({toggle: !this.state.toggle});
         console.log('click', this);
     }
 
@@ -38,7 +46,7 @@ class Portfolio extends Component{
 
                         </div>
 
-                        <div className="portfolio-disply-text">
+                        <div className="portfolio-display-text">
 
                         </div>
 
@@ -46,8 +54,26 @@ class Portfolio extends Component{
 
                     <div className="portfolio-display-bottom">
 
+                        <div onClick={this.clickLeftHandler} className="portfolio-display-arrow-left">
+                        </div>
+
                         <div className="portfolio-display-preview">
 
+                            <div className="portfolio-display-thumbItem">
+                                
+                            </div>
+
+                            <div className="portfolio-display-thumbItem">
+                                
+                            </div>
+
+                            <div className="portfolio-display-thumbItem">
+                                
+                            </div>
+
+                        </div>
+
+                        <div onClick={this.clickRightHandler} className="portfolio-display-arrow-right">
                         </div>
                     
                     </div>
