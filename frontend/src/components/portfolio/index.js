@@ -32,7 +32,11 @@ class Portfolio extends Component{
     }
 
 
+
+
     render(){
+
+        console.log(this.props.projects);
 
         return(
             <div className="portfolio-page main-item">     
@@ -70,17 +74,16 @@ class Portfolio extends Component{
 
                         <div className="portfolio-display-preview">
 
-                            <div className="portfolio-display-thumbItem">
-                                
-                            </div>
+                        {this.props.projects.map(project => {
+                            return (
+                                <div className="portfolio-display-thumbItem">
+                                        {project.title}
+                                </div>                                
+                            )
+                        })}
 
-                            <div className="portfolio-display-thumbItem">
-                                
-                            </div>
 
-                            <div className="portfolio-display-thumbItem">
-                                
-                            </div>
+
 
                         </div>
 
