@@ -10,7 +10,7 @@ html, body{
 }
 
 .App{
-    background: rgb(164, 152, 136);
+    background: rgb(0, 19, 37);
     font-family: 'Raleway', sans-serif;
     width: 100%;
 }
@@ -82,7 +82,7 @@ html, body{
     }
     
     .main {
-        padding: 16px;
+        /* padding: 16px; */
         padding-top: 1px;
         margin-bottom: 50px;
         height: 2168px; /* Used in this example to enable scrolling */

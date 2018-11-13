@@ -13,7 +13,7 @@ class Portfolio extends Component{
         this.props.getProjects();
         this.state = {
             toggle: false,
-            testArr: [null, '0', '1', '2', '3', null]
+            testArr: this.props.projects
         };
 
     }
