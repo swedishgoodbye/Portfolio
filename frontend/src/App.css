@@ -42,14 +42,4 @@ html, body{
     
 
     
-    .main {
-        /* padding: 16px; */
-        padding-top: 1px;
-        margin-bottom: 50px;
-        height: 2168px; /* Used in this example to enable scrolling */
-        /* width: 100%; */
-    }
     
-    .main-item{
-        margin: .5% 0; 
-    }
