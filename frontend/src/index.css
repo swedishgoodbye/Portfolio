@@ -9,3 +9,45 @@ body {
 #root{
   max-width: 100%;
 }
+
+/* ---------------------------------------------------  Landing Page  --------------------------------------------------- */
+
+@keyframes bgAnim{
+  from {background-position-y: 0%;}
+  to {background-position-y: 100%;}
+}
+
+@keyframes textAnim{
+  from {color: rgb(255, 254, 254);}
+  to {color: rgb(18, 29, 39);}
+}
+
+@keyframes bordAnim{
+  from {border-color: rgb(0, 19, 37);}
+  to {border-color: rgb(207, 230, 252);}
+}
+
+.front-page{
+  height: 100vh;;
+  background: url('./media/IMG_0056.JPG');
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  animation: bgAnim 140s infinite alternate linear;
+  }
+
+
+.front-text {
+  margin: 0 20% 0 16.4%;
+  padding-top: 0%;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 8vw;
+  margin-bottom: 0px;
+  border-bottom: 5px solid;
+  opacity: .9;
+  animation: textAnim 140s infinite alternate linear, bordAnim 140s infinite alternate linear;
+  transition: all 0.5s ease;
+  }
