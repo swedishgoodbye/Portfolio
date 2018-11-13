@@ -1,8 +1,7 @@
 .contact-page{
     /* height: 980px; */
-    height: 61%;
+    height: 91.5vh;
     padding: 1%;
-    border: 1px solid orange;
     display: flex;
     flex-direction: column;
     background: #1E3D5A;
@@ -21,10 +20,9 @@
 
 .contact-title{
     text-align: center;
-    font-size: 605%;
     margin-right: 0%;
     font-family: 'Raleway', sans-serif;
-    font-size: 400%;
+    font-size: 5vw;
     color: rgb(164, 152, 136);
     background: rgb(0, 19, 37);
     margin-top: 0%;
@@ -42,8 +40,8 @@
 .contact-form{
     display: flex;
     justify-content: center;
-    height: 100%;
-    width: 80%;
+    height: 40vh;
+    width: 90vw;
 
 }
 
@@ -51,16 +49,17 @@
     display: flex;
     flex-direction: column;
     align-content: center;
-    width: 50%;
+    width: 70vw;
     height: 100%;
 }
 
 .contact-form-components input{
-    margin-bottom: 2%;
+    margin-bottom: 1%;
+    height: 15%;
 }
 
 .contact-form-components a{
-    margin-top: 4%;
+    margin: 2% 0 4%;
     background: rgb(0, 19, 37);
     color: rgb(164, 152, 136);
     width: 20%;
@@ -69,6 +68,7 @@
     text-align: center;
     border: 5px solid rgb(164, 152, 136);
     font-weight: 600;
+
 }
 
 .contact-form-components a:hover{
@@ -84,8 +84,7 @@
     
     opacity: .70;
     font-family: 'Oswald', sans-serif;
-    
-    font-size: 180%;
+    font-size: 5vw;
     font-weight: 900;
     text-align: center;
     text-decoration: none;
@@ -95,7 +94,8 @@
     background: rgb(0, 19, 37);
     border: 8px solid rgb(164, 152, 136);
     padding: .5%;
-    width: 40%;
+    width: 75vw;
+    margin-top: 10%;
    
 }
 
@@ -106,6 +106,7 @@
 
 .contact-linked{
     opacity: .8;
+    width: 25vw;
 }
 
 .contact-linked:hover{

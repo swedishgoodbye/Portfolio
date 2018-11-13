@@ -8,7 +8,7 @@ class About extends Component{
 
     render(){
         return(
-            <div className='about-page'>
+            <div className='about-page main-item'>
 
             <h1 className="about-title"> About Me </h1>
 
@@ -19,11 +19,11 @@ class About extends Component{
                     {/* <h3>My name is Brett Sullivan...</h3> */}
 
                     <p>
-                    I am Full Stack Web Developer with a Front-End focus who excels at building out clean and accessible user interfaces. Just as well I've learned that a well-written front-end is still highly dependent on a sturdy foundation. I can just as well dig into the backend and work with REST API's, MongoDB, Django, etc. I have recently graduated from Lambda School's Full-Stack Web & Computer Science course. Currently, I am looking to bring my innovative mindset, artful creativity, and efficient work ethic to a team that I can truly grow with.
+                    {/* I am a Full Stack Web Developer with a Front-End focus who excels at building clean and accessible user interfaces. Just as well I've learned that a well-written front-end is still highly dependent on a sturdy foundation. I can just as well dig into the backend and work with REST API's, MongoDB, Django, etc. I have recently graduated from Lambda School's Full-Stack Web & Computer Science course. Currently, I am looking to bring my innovative mindset, artful creativity, and efficient work ethic to a team that I can truly grow with. */}
                     </p>
 
                     <p>
-                    Outside of programming, I have a very strong musical background. I play guitar in the band Dead Split Egos in which I have toured almost the entire United States. We are currently working to write our first full album. Being in this band for over eight years has given me a wealth of knowledge when it comes to working with a team to set and achieve goals, collaborate on ideas, and maintaining the group's morale so everyone stays on track. It also shows that when I passionately believe in what a team is doing I will stay dedicated and push it forward as far as it will go.
+                    {/* Outside of programming, I have a very strong musical background. I play guitar in the band Dead Split Egos in which I have toured almost the entire United States. We are currently working to write our first full album. Being in this band has given me a wealth of knowledge when it comes to working with a team to set and achieve goals, collaborate on ideas, and maintaining the group's morale so everyone stays on track. It's also an example that when I passionately believe in what a team is doing I will stay dedicated and push it forward as far as it will go. */}
                     </p>
                 </div>
 
@@ -43,24 +43,24 @@ class About extends Component{
                     </div>
 
                     <div className="media-bottom">
-                        <ul> Tech Stack:
+                        <ul className="tech-list"> Tech Stack:
                             <li>HTML / CSS</li>
                             <li>Javascript</li>
                             <li>C</li>
                             <li>Python</li>
-                            <li>React / Redux</li>
+                            <li>React  Redux</li>
                             <li>Django</li>
                             <li>Bootstrap</li>
                             <li>LESS</li>
                             <li>MongoDB</li>
                             <li>Axios</li>
                         </ul>
-                        <ul> Soft Skill Stack: 
+                        <ul className="soft-list"> Soft Skill Stack: 
                             <li>Efficient</li>
-                            <li>Independent</li>
+                            <li>Trained </li>
                             <li>Logical</li>
                             <li>Dependable</li>
-                            <li>Knows Their Role</li>
+                            <li>Leadership</li>
                             <li>Empathetic</li>
                             <li>Patient</li>
                             <li>Persistent</li>

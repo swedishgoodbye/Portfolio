@@ -1,67 +1,82 @@
-/* .front-page {
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    background: url(IMG_0056.JPG) no-repeat 50% 50%;
-    display: table;
-    top: 0;
-    background-size: cover;
-} */
-
-/* .front-page {
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    max-width: none;
-
-} */
-
-.front-page{
-    height: 958px;
-    width: 100%;
-    /* margin: auto; */
-    background: url('../../media/IMG_0056.JPG');
-    background-repeat: no-repeat;
-    /* background-position: center; */
-    /* display: table; */
-    /* top: 0; */
-    background-size: 100% 145.5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* overflow: hidden; */
+@keyframes bgAnim{
+    from {background-position-y: 0%;}
+    to {background-position-y: 100%;}
 }
 
+@keyframes textAnim{
+    from {color: rgb(255, 254, 254);}
+    to {color: rgb(18, 29, 39);}
+}
+
+@keyframes bordAnim{
+    from {border-color: rgb(0, 19, 37);}
+    to {border-color: rgb(207, 230, 252);}
+}
+
+.front-page{
+    /* height: 570px; */
+    height: 100vh;;
+    /* width: 100%; */
+    background: url('../../media/IMG_0056.JPG');
+    background-repeat: no-repeat;
+    /* background-size: 150% 205.5%; */
+    /* background-position-x: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    animation: bgAnim 140s infinite alternate linear;
+    }
+
+
 .front-text {
-    /* max-width: 500px; */
-    /* margin: 0 23.5% auto */
-
-    
-
     margin: 0 20% 0 16.4%;
     padding-top: 0%;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    /* color: rgb(247, 242, 242); */
-    /* color: rgba(255, 253, 253, 0.678); */
-    /* color: rgb(216, 208, 198); */
+    /* color: rgb(240, 239, 239); */
+    /* background: rgb(0, 19, 37); */
+    font-size: 8vw;
+    margin-bottom: 0px;
+    /* border: 5px solid rgb(0, 19, 37); */
+    border-bottom: 5px solid;
+    opacity: .9;
+    animation: textAnim 140s infinite alternate linear, bordAnim 140s infinite alternate linear;
+    transition: all 0.5s ease;
+    }
+
+ /* @media screen and (min-width: 410px){
+    .front-page{
+        height: 660px;
+    }
+
+} */
+
+/*
+@media screen and (min-width: 860px){
+.front-page{
+    height: 958px;
+    width: 100%;
+    background: url('../../media/IMG_0056.JPG');
+    background-repeat: no-repeat;
+    background-size: 100% 145.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+
+.front-text {
+    margin: 0 20% 0 16.4%;
+    padding-top: 0%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
     color: rgb(209, 209, 209);
     background: rgb(0, 19, 37);
-    /*text-shadow: 0px 0px 200px #000;*/
-    font-size: 1800%;
+    font-size: 180px;
     margin-bottom: 0px;
     border: 5px solid rgb(164, 152, 136);
     opacity: .9;
-    /* border: solid 2px white;
-    border-spacing: 50px; */
-    /* background-color: rgba(1, 7, 10, 0.8); */
-
+    }
 }
-
-/* .content h1{
-    font-family: 'Raleway', sans-serif;
-    color: #D0D0D0;
-    /*text-shadow: 0px 0px 200px #000;*/
-    /* font-size: 800%;
-    margin-bottom: 0px;
-}  */
+ */
