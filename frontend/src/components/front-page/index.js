@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 import ReactCursorPosition from 'react-cursor-position';
 
@@ -28,10 +29,10 @@ class Front extends Component{
                     Welcome
                 </div> */}
                 <div className='nav'>
-                    <a className='nav-item' >About</a>
-                    <a className='nav-item'>Portfolio</a>
+                    <Link className='nav-item' to={{pathname: `/about`}} >About</Link>
+                    <Link className='nav-item' to={{pathname: `/portfolio`}}>Portfolio</Link>
                     {/* <a onClick={() => scrollToComponent(this.Music, { offset: 0, align: 'top', duration: 800})} className='nav-item'>Music</a> */}
-                    <a className='nav-item'>Contact</a>
+                    <Link className='nav-item' to={{pathname: `/contact`}}>Contact</Link>
                 </div>
                 {/* </ReactCursorPosition> */}
             </div>
