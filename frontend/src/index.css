@@ -1,8 +1,59 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* --------------------------------------------------- Base --------------------------------------------------- */
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: rgb(164, 152, 136);
+  background: #071F2D;
   
 }
 
@@ -13,33 +64,37 @@ body {
 /* ---------------------------------------------------  Landing Page  --------------------------------------------------- */
 
 @keyframes bgAnim{
-  from {background-position-y: 0%;}
-  to {background-position-y: 100%;}
+  from {background-position-y: 100%;}
+  to {background-position-y: 0%;}
 }
 
 @keyframes textAnim{
-  from {color: rgb(178, 188, 189);}
-  to {color: rgb(41, 66, 88);}
+  from {color: rgb(41, 66, 88);}
+  to {color: rgb(178, 188, 189);}
  
 }
 
 @keyframes bordAnim{
-  from {border-color: rgb(0, 19, 37);}
-  to {border-color: rgb(207, 230, 252);}
+  from {border-color: rgb(207, 230, 252);}
+  to {border-color: rgb(0, 19, 37);}
 }
 
 .front-page{
   height: 100vh;
-  background: url('./media/thinBg.JPG');
+  background: url('./media/thinBgD.JPG');
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  animation: bgAnim 140s infinite alternate linear;
+  animation: bgAnim 170s infinite alternate linear;
   }
 
+.settings{
+  align-self: flex-end;
+  justify-self: flex-start;
+}
 
 .front-text {
   /* padding-top: 0%; */
@@ -48,34 +103,46 @@ body {
   font-size: 400%;
   border-bottom: 5px solid;
   opacity: .9;
-  animation: textAnim 140s infinite alternate linear, bordAnim 140s infinite alternate linear;
-  transition: all 0.5s ease;
+  animation: textAnim 80s infinite alternate linear, bordAnim 120s infinite alternate linear;
+  transition: all 1s ease;
   /* align-self: center; */
   }
 
-  .nav {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    -ms-flex-pack: space-evenly;
-    /* justify-content: space-around; */
-    /* padding-bottom: 25vh; */
-    height: 40vh;
-    justify-content: space-evenly;
+  .front-text:hover{
+    transition: all .3s ease;
+    text-shadow: 0px 5px 40px ;
   }
 
-  .nav-item{
-    /* margin: .4vw; */
-    padding: 2%;
-    cursor: pointer;
-    border: 2px solid;
-    font-size: 140%;
-    width: 100%;
-    color: rgb(136, 182, 190);
-    text-align: center;
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: 40vh;
+  justify-content: space-evenly;
+}
+
+.nav-item{
+  width: 100%;
+  padding: .2vw;
+  cursor: pointer;
+  border: 2px solid;
+  border-spacing: 5%;
+  text-align: center;
+  font-size: 140%;
+  opacity: .8;
+  color:rgb(99, 139, 148);
+  border-color: rgb(123, 159, 167);
+  transition: all 4s ease;
+  font-family: 'Raleway', sans-serif;
+}
+
+.nav-item:hover {
+  color: rgb(183, 237, 247);
+  opacity: 1;
+  box-shadow: 0px 0px 10px rgb(170, 228, 238);
+  text-shadow: 0px 0px 25px rgb(75, 99, 104);
+  transition: all .1s ease;
+}
 
 
-  }
+
