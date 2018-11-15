@@ -33,19 +33,22 @@ class App extends Component {
       <div className="App">
         {/* <Nav /> */}
 
-        <div className='main'>
-        <Route href="#start" ref={(section) => { this.Front = section; }} render={() => <Front className = "main-item" />} />
-        <Route href="#portfolio" ref={(section) => { this.Portfolio = section; }} render={props => <Portfolio {...props} />} />
-        <Route href="#about" ref={(section) => { this.About = section; }} render={() => <About />} />
+        {/* <div className='main'> */}
+        <Route exact path={"/"} render={() => <Front />} />
+        <Route exact path={"/about"} render={() => <About />} /> 
+        <Route exact path={"/projects"} render={() => <Portfolio />} />
+        <Route exact path={"/contact"} render={() => <Contact />} />
+        {/* <Route href="#portfolio" ref={(section) => { this.Portfolio = section; }} render={props => <Portfolio {...props} />} /> */}
+        {/* <Route href="#about" ref={(section) => { this.About = section; }} render={() => <About />} /> */}
         {/* <Route href="#music" ref={(section) => {this.Music = section;}} render={() => <Music />} /> */}
-        <Route href="#contact" ref={(section) => {this.Contact = section;}} render={() => <Contact />} /> 
+        {/* <Route href="#contact" ref={(section) => {this.Contact = section;}} render={() => <Contact />} />  */}
          {/* test */}
          {/* <br />
          <br />
          <br />
          <br /> */}
         {/* <Front /> */}
-        </div>
+        {/* </div> */}
       </div>
       </Router>
     );

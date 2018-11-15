@@ -5,7 +5,7 @@
     flex-direction: column;
     /* justify-content: center; */
     align-items: flex-start;
-    background: #1E3D5A;
+    /* background: #1E3D5A; */
     font-family: 'Raleway', sans-serif;
 }
 
@@ -15,7 +15,7 @@
     margin-right: 0%;
     /* font-size: 400%; */
     color: rgb(164, 152, 136);
-    background: rgb(0, 19, 37);
+    /* background: rgb(0, 19, 37); */
     margin-top: 0%;
     padding: .9% 0;
     border: 5px solid rgb(164, 152, 136);
