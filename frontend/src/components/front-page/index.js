@@ -30,7 +30,7 @@ class Front extends Component{
                 </div> */}
                 <div className='nav'>
                     <Link className='nav-item' to={{pathname: `/about`}} >About</Link>
-                    <Link className='nav-item' to={{pathname: `/portfolio`}}>Portfolio</Link>
+                    <Link className='nav-item' to={{pathname: `/projects`}}>Projects</Link>
                     {/* <a onClick={() => scrollToComponent(this.Music, { offset: 0, align: 'top', duration: 800})} className='nav-item'>Music</a> */}
                     <Link className='nav-item' to={{pathname: `/contact`}}>Contact</Link>
                 </div>
