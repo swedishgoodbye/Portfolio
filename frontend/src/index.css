@@ -57,7 +57,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: #071F2D;
+  /* background: #071F2D; */
   
 }
 
@@ -66,14 +66,6 @@ body {
 }
 
 /* ---------------------------------------------------  App  --------------------------------------------------- */
-
-.App{
-  background: rgb(0, 19, 37);
-  font-family: 'Raleway', sans-serif;
-  width: 100%;
-}
-
-/* ---------------------------------------------------  Landing Page  --------------------------------------------------- */
 
 @keyframes bgAnim{
   from {background-position-y: 100%;}
@@ -91,21 +83,30 @@ body {
   to {border-color: rgb(0, 19, 37);}
 }
 
-.front-page{
+.App{
   height: 100vh;
   background: url('./media/thinBgD.JPG');
   background-repeat: no-repeat;
   background-size: cover;
+  animation: bgAnim 170s infinite alternate linear;
+  /* font-family: 'Raleway', sans-serif; */
+  width: 100%;
+}
+
+/* ---------------------------------------------------  Landing Page  --------------------------------------------------- */
+
+
+.front-page{
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: column;
-  animation: bgAnim 170s infinite alternate linear;
-  }
+  height: 100vh;
+}
 
 .settings{
   align-self: flex-end;
-  justify-self: flex-start;
+  /* justify-self: flex-start; */
 }
 
 .front-text {
