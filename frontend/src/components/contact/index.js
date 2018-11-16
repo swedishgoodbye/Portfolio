@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 import ReactContactForm from 'react-mail-form';
 
@@ -8,7 +9,11 @@ class Contact extends Component{
     render(){
         return(
             <div className="contact-page main-item">
-                    <h1 className="contact-title">Get In Touch</h1>
+                    {/* <h1 className="contact-title">Get In Touch</h1> */}
+                    <Link className='page-exit' to={{pathname: `/`}}>
+                        {/* <img src={require('../../media/x.png')}/> */}
+                        X
+                    </Link>
                 <div class="inner">
                         <div className="contact-form">
                             <ReactContactForm 

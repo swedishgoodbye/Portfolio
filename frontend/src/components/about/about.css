@@ -7,132 +7,14 @@
     align-items: flex-start;
     /* background: #1E3D5A; */
     font-family: 'Raleway', sans-serif;
+    transition: all 0.5s ease;
 }
 
-.about-title{
-    text-align: center;
-    font-size: 6vw;
-    margin-right: 0%;
-    /* font-size: 400%; */
-    color: rgb(164, 152, 136);
-    /* background: rgb(0, 19, 37); */
-    margin-top: 0%;
-    padding: .9% 0;
-    border: 5px solid rgb(164, 152, 136);
-    height: 12%;
-    width: 97%;
+.about-display{
+    background: rgba(0, 19, 37, 0.733);
+    border: 1px solid rgba(207, 230, 252, 0.685);
+    height: 90vh;
+    margin: .5%;
+    width: 97vw;
+    padding: .5vw;
 }
-
-.about-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    border: 2px rgb(164, 152, 136) solid;
-    height: 80%;
-}
-
-.about-item{
-    width: 48%;
-}
-
-.about-summary{
-    background: rgb(0, 19, 37);
-    border-right: 2px solid rgb(164, 152, 136); 
-    color: rgb(164, 152, 136);
-    flex-direction: column;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    padding: 0 1%;
-    font-size: 1.2vw;
-    
-}
-
-.about-summary h3{
-    font-size: 300%;
-    text-decoration: underline;
-}
-
-.about-summary p{
-    /* font-size: 2.5vw; */
-    font-weight: 900;
-    /* text-decoration: underline; */
-    letter-spacing: 3px;
-    padding-left: 2%;
-    
-    
-}
-
-.about-media{
-    background: rgb(0, 19, 37);
-    color: rgb(164, 152, 136);
-    border-left: 2px solid rgb(164, 152, 136);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-
-}
-
-.media-top{
-    display: flex;
-    flex-direction: row;
-    /* border-bottom: 1px solid rgb(164, 152, 136); */
-}
-
-.media-top div{
-    padding: 1%;
-    width: 100%;
-}
-
-.media-top h3{
-    font-weight: 700;
-    font-size: 1.5vw;
-}
-
-.media-top p{
-    border-bottom: 1px solid rgb(164, 152, 136);
-    width: 100%;
-    text-align: center;
-    font-weight: 600;
-    /* font-size: 120%; */
-    font-size: 2vw;
-}
-
-.media-bottom{
-    font-size: 1.5vw;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    
-}
-
-.media-bottom ul{
-    padding: 0 0 0 3%;
-}
-
-.media-bottom li{
-    /* text-decoration: underline; */
-    
-    letter-spacing: 1.2px;
-    list-style: none;
-    line-height: 3vh;
-}
-
-.media-top img{
-    width: 50%;
-    height: 60%;
-    border: 1px solid rgb(164, 152, 136);
-    border-left: none;
-}
-
-.soft-list{
-    /* margin-top: 0; */
-    margin-bottom: 8vh;
-}
-
-.tech-list{
-    margin-top: 0;
-    margin-bottom: .5%;
-}
-

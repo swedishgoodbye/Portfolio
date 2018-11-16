@@ -17,11 +17,11 @@
     width: 85vw;
     height: 80vh;
     align-self: center;
-    border: 3px solid rgb(164, 152, 136);
+    border: 3px solid rgba(207, 230, 252, 0.685);
     /* display: flex; */
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: .5vw;
     
 }
@@ -29,7 +29,7 @@
 .page-exit{
     /* display: initial; */
     opacity: .9;
-    color: rgb(207, 230, 252);
+    color: rgb(255, 254, 254);
     
     
 }
@@ -38,7 +38,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    height: 70vh;
+    height: 75vh;
     opacity: .8;
 }
 
@@ -51,6 +51,12 @@
     border-bottom: 15px solid transparent;
     border-right: 15px solid rgb(207, 230, 252);
     cursor: pointer;
+}
+
+.portfolio-projects{
+    border: 1px solid rgba(207, 230, 252, 0.685);
+    width: 75vw;
+    height: 70vh;
 }
 
 .portfolio-display-arrow-right{

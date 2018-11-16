@@ -52,6 +52,11 @@ class Portfolio extends Component{
                 <div className="portfolio-display-inner">
                     <div onClick={this.clickLeftHandler} className="portfolio-display-arrow-left">
                     </div>
+
+                    <div className="portfolio-projects">
+
+                    </div>
+
                     <div onClick={this.clickRightHandler} className="portfolio-display-arrow-right">
                     </div>
                 </div>

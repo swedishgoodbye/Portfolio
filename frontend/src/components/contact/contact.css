@@ -1,10 +1,12 @@
 .contact-page{
     /* height: 980px; */
-    height: 91.5vh;
-    padding: 1%;
+    height: 95vh;
+    /* padding: 1%; */
     display: flex;
     flex-direction: column;
-    background: #1E3D5A;
+    justify-content: center;
+    padding-top: 1vh;
+    /* background: #1E3D5A; */
 }
 
 /* .contact-header{
@@ -18,16 +20,20 @@
     text-align: center;
 } */
 
-.contact-title{
-    text-align: center;
-    margin-right: 0%;
-    font-family: 'Raleway', sans-serif;
-    font-size: 5vw;
-    color: rgb(164, 152, 136);
-    background: rgb(0, 19, 37);
-    margin-top: 0%;
-    padding: 2% 0;
-    border: 5px solid rgb(164, 152, 136);
+.page-exit{
+    /* display: initial; */
+    opacity: .7;
+    color: rgb(255, 254, 254);
+    padding: 0 0 0 1vw;
+    width: 2%;
+    
+}
+
+.page-exit:hover{
+    /* display: initial; */
+    opacity: .9;
+
+    
 }
 
 .inner{
@@ -35,6 +41,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .contact-form{
@@ -50,30 +57,47 @@
     flex-direction: column;
     align-content: center;
     width: 70vw;
-    height: 100%;
+    height: 60vh;
 }
 
 .contact-form-components input{
     margin-bottom: 1%;
-    height: 15%;
+    /* height: 15%; */
+    opacity: .8;
 }
 
+.contact-form-components input:hover{
+    opacity: .9;
+}
+
+.contact-form-components textarea{
+    opacity: .8;
+}
+
+.contact-form-components textarea:hover{
+    opacity: .9;
+}
+
+
+
 .contact-form-components a{
-    margin: 2% 0 4%;
+    margin: 2% 0 4% 50vh;
     background: rgb(0, 19, 37);
-    color: rgb(164, 152, 136);
+    color: rgb(168, 164, 164);
     width: 20%;
     padding: 2% 0%;
     padding-right: .5%;
     text-align: center;
-    border: 5px solid rgb(164, 152, 136);
+    border: 5px solid rgb(168, 164, 164);
     font-weight: 600;
+    opacity: .7;
+    transition: all 0.5s ease;
 
 }
 
 .contact-form-components a:hover{
     background: rgb(86, 124, 140);
-    color: rgb(164, 152, 136);
+    color: white;
     transition: all 0.3s ease;
 }
 /* .contact-form-components textarea{
@@ -96,6 +120,7 @@
     padding: .5%;
     width: 75vw;
     margin-top: 10%;
+    
    
 }
 
@@ -107,19 +132,23 @@
 .contact-linked{
     opacity: .8;
     width: 25vw;
+    transition: all 0.3s ease;
 }
 
 .contact-linked:hover{
     opacity: 1;
+    transition: all 0.3s ease;
 }
 
 a{
     color: rgb(164, 152, 136);
+    transition: all 0.3s ease;
 }
 
 a:hover {
 
     color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
 }
 
 
