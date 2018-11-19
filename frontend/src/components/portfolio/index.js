@@ -14,8 +14,8 @@ class Portfolio extends Component{
         this.props.getProjects();
         this.state = {
             toggle: false,
-            testArr: this.props.projects,
-            current: [],
+            projects: this.props.projects,
+            firstProject: this.props.projects[0],
             selector: 0,
             
         };
@@ -23,7 +23,9 @@ class Portfolio extends Component{
     }
 
     projectSelector = () =>{
-        let projects = this.props.projects
+        let projects = this.state.projects;
+        console.log('fp', this.state.firstProject++);
+
 
     //     if(this.state.toggle == false){
     //         this.setState({
@@ -45,9 +47,10 @@ class Portfolio extends Component{
     clickRightHandler = () => {
         // this.setState({toggle: !this.state.toggle});
         console.log('right', this);
-        this.setState({
-            selector: 1,
-        })
+        console.log('fp', this.state.firstProject[+1]);
+        // this.setState({
+        //     selector: 1,
+        // })
     }
     clickLeftHandler = () => {
         // this.setState({toggle: !this.state.toggle});
