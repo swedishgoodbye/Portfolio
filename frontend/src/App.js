@@ -57,7 +57,7 @@ class App extends Component {
 
 const mapStateToProps = state => {
   return {
-    // projects: state.projects,
+    projects: state.projects,
   }
 }
 
