@@ -51,12 +51,59 @@
     border-bottom: 15px solid transparent;
     border-right: 15px solid rgb(207, 230, 252);
     cursor: pointer;
+    text-shadow: 0px 0px 10px rgb(170, 228, 238);
+}
+.portfolio-display-arrow-left:hover{
+    border-right-color: rgb(246, 250, 253);
 }
 
 .portfolio-projects{
     border: 1px solid rgba(207, 230, 252, 0.685);
     width: 75vw;
     height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px rgb(170, 228, 238);
+}
+
+.project-link{
+    /* text-align: center; */
+    width: 45%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0 20.8vw;
+}
+
+.project-img:hover{
+    opacity: .9;
+}
+
+.project-name{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(255, 254, 254);
+    font-size: 200%;
+}
+
+.project-description{
+    color: rgb(255, 254, 254);
+    font-family: 'Raleway', sans-serif;
+    padding: 0 5%;
+    text-decoration: underline;
+    font-size: 150%;
+}
+
+.project-stack{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(255, 254, 254);
+    font-family: 'Raleway', sans-serif;
+    font-size: 120%;
+
 }
 
 .portfolio-display-arrow-right{
@@ -67,7 +114,8 @@
     border-left: 15px solid rgb(207, 230, 252);
     cursor: pointer;
 }
-
-
+.portfolio-display-arrow-right:hover{
+    border-left-color: rgb(246, 250, 253);
+}
 
 

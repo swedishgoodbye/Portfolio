@@ -14,14 +14,40 @@ class Portfolio extends Component{
         this.props.getProjects();
         this.state = {
             toggle: false,
-            testArr: this.props.projects
+            testArr: this.props.projects,
+            current: [],
+            selector: 0,
+            
         };
+
+    }
+
+    projectSelector = () =>{
+        let projects = this.props.projects
+
+    //     if(this.state.toggle == false){
+    //         this.setState({
+    //             current: projects[0],
+    //             toggle: true,
+    //         });
+    //     }
+
+    //     for (let i in projects){
+
+    //     while(this.state.selector = 1){
+    //         projects[i] + 1;
+    //         this.setState.selector = 0;
+    //     }
+    // }
 
     }
 
     clickRightHandler = () => {
         // this.setState({toggle: !this.state.toggle});
         console.log('right', this);
+        this.setState({
+            selector: 1,
+        })
     }
     clickLeftHandler = () => {
         // this.setState({toggle: !this.state.toggle});
@@ -32,12 +58,20 @@ class Portfolio extends Component{
         console.log('click', this);
     }
 
+    componentDidMount(){
+        this.setState = {
+            current: this.props.projects[0]
+        }
+
+        
+    }
 
 
 
     render(){
 
         console.log(this.props.projects);
+        console.log('curr', this.state)
 
         return(
             <div className="portfolio-page">     
@@ -54,6 +88,14 @@ class Portfolio extends Component{
                     </div>
 
                     <div className="portfolio-projects">
+
+                        <a href="http://www.lambdarandomizer.com" className="project-link"><img className="project-img" src={require('../../media/randproj.PNG')}/></a>
+                        <div className="project-name">Project Name: Lambda Randomizer</div>
+                        <div className="project-description">A really cool and in depth description for this project that's holding the place for the real cool and in depth description for this project.</div>
+                        <ul className="project-stack">
+                            <li className="stack-item">React</li>
+                        </ul>
+
 
                     </div>
 
