@@ -6,118 +6,148 @@ import { connect } from 'react-redux';
 import { getProjects } from '../../actions';
 import './portfolio.css';
 
-
-class Portfolio extends Component{
-
-    constructor(props){
-        super(props);
-        this.props.getProjects();
-        this.state = {
-            toggle: false,
+class Portfolio extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      toggle: false,
+      projects: this.props.projects,
+      projectIndex: 0,
+      url: '',
+      //   currentProject: this.props.projects[this.projectIndex],
+      started: false,
+      // currentProject:this.props.projects[this.state.projectIndex],
+    };
+    
+    console.log('const', this.props)
+    
+    // this.clickRightHandler = this.clickRightHandler.bind (this);
+  }
+  
+  componentDidMount() {
+    this.props.getProjects();
+          
+          this.setState = {
+            projectIndex: 0,
             projects: this.props.projects,
-            firstProject: this.props.projects[0],
-            selector: 0,
-            
-        };
-
-    }
-
-    projectSelector = () =>{
-        let projects = this.state.projects;
-        console.log('fp', this.state.firstProject++);
-
-
-    //     if(this.state.toggle == false){
-    //         this.setState({
-    //             current: projects[0],
-    //             toggle: true,
-    //         });
-    //     }
-
-    //     for (let i in projects){
-
-    //     while(this.state.selector = 1){
-    //         projects[i] + 1;
-    //         this.setState.selector = 0;
-    //     }
-    // }
-
-    }
-
-    clickRightHandler = () => {
-        // this.setState({toggle: !this.state.toggle});
-        console.log('right', this);
-        console.log('fp', this.state.firstProject[+1]);
-        // this.setState({
-        //     selector: 1,
-        // })
-    }
-    clickLeftHandler = () => {
-        // this.setState({toggle: !this.state.toggle});
-        console.log('left', this);
-    }
-    clickHandler = () => {
-        // this.setState({toggle: !this.state.toggle});
-        console.log('click', this);
-    }
-
-    componentDidMount(){
-        this.setState = {
-            current: this.props.projects[0]
+          };
+      
+          console.log('selectedF', this.state.started);
         }
 
-        
+  initialSelector = () => {
+    if (this.state.started == false) {
+      console.log('init');
+      return this.setState({
+        started: true,
+        // currentProject:this.props.projects[0],
+        url: this.props.projects[0],
+      });
     }
+  };
+
+  clickRightHandler = () => {
+    if (this.state.projectIndex == this.props.projects.length - 1) {
+      return console.log('last item');
+    } else {
+      return ++this.state.projectIndex;
+    }
+  };
+  clickLeftHandler = () => {
+    if (this.state.projectIndex == 0) {
+      return console.log('first item');
+    } else {
+      return --this.state.projectIndex;
+    }
+  };
+  clickHandler = () => {
+    console.log('click', this);
+    console.log('lick', this.state.projectIndex);
+    console.log('cick', this.props.projects[this.state.projectIndex].link);
+  };
 
 
+  render() {
+    // this.initialSelector();
 
-    render(){
+    let projects = this.props.projects;
+    let projectIndex = this.state.projectIndex;
 
-        console.log(this.props.projects);
-        console.log('curr', this.state)
+    return (
+      <div className="portfolio-page">
 
-        return(
-            <div className="portfolio-page">     
+        <div className="portfolio-display">
 
-
-                <div className="portfolio-display">
-
-                    <Link className='page-exit' to={{pathname: `/`}}>
-                        {/* <img src={require('../../media/x.png')}/> */}
-                        X
-                    </Link> 
-                <div className="portfolio-display-inner">
-                    <div onClick={this.clickLeftHandler} className="portfolio-display-arrow-left">
-                    </div>
-
-                    <div className="portfolio-projects">
-
-                        <a href="http://www.lambdarandomizer.com" className="project-link"><img className="project-img" src={require('../../media/randproj.PNG')}/></a>
-                        <div className="project-name">Project Name: Lambda Randomizer</div>
-                        <div className="project-description">A really cool and in depth description for this project that's holding the place for the real cool and in depth description for this project.</div>
-                        <ul className="project-stack">
-                            <li className="stack-item">React</li>
-                        </ul>
+          <Link className="page-exit" to={{ pathname: `/` }}>
+            {/* <img src={require('../../media/x.png')}/> */}
+            X
+          </Link>
+          <div className="portfolio-display-inner">
+            <div
+              onClick={this.clickLeftHandler}
+              className="portfolio-display-arrow-left"
+            />
 
 
-                    </div>
+            {/* {this.props.projects[0].map(project => {
+            <div className="portfolio-projects">
 
-                    <div onClick={this.clickRightHandler} className="portfolio-display-arrow-right">
-                    </div>
-                </div>
-                </div>
+              <a href={`./`} className="project-link">
+                <img
+                  className="project-img"
+                  src={require('../../media/randproj.PNG')}
+                />
+              </a>
+              <div onClick={this.clickHandler} className="project-name">
+                Project Name: Lambda Randomizer
+              </div>
+              <div className="project-description">
+                A really cool and in depth description for this project that's holding the place for the real cool and in depth description for this project.
+              </div>
+              <ul className="project-stack">
+                <li className="stack-item">React</li>
+              </ul>
+
 
             </div>
-        )
-    }
+            })} */}
+            <div className="portfolio-projects">
+              <a
+                href={`./`}
+                className="project-link"
+              >
+                <img
+                  className="project-img"
+                  src={require ('../../media/randproj.PNG')}
+                />
+              </a>
+              <div onClick={this.clickHandler} className="project-name">
+                Project Name: Lambda Randomizer
+              </div>
+              <div className="project-description">
+                A really cool and in depth description for this project that's holding the place for the real cool and in depth description for this project.
+              </div>
+              <ul className="project-stack">
+                <li className="stack-item">React</li>
+              </ul> 
+
+            </div>
+            <div
+              onClick={this.clickRightHandler}
+              className="portfolio-display-arrow-right"
+            />
+          </div>
+        </div>
+
+      </div>
+    );
+  }
 }
 
 const mapStateToProps = state => {
-    return {
-        projects: state.projects
-    };
+  return {
+    projects: state.projects,
+  };
 };
 
-export default connect(
-    mapStateToProps,
-        { getProjects })(Portfolio);
+export default connect(mapStateToProps, { getProjects })(Portfolio);
