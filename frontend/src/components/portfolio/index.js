@@ -117,7 +117,7 @@ class Portfolio extends Component {
             />
 
 
-            {this.props.projects[0].map(project => {
+            {this.props.projects.map(project => {
               return(
             <div className="portfolio-projects">
 
