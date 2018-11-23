@@ -116,18 +116,18 @@ class Portfolio extends Component {
               className="portfolio-display-arrow-left"
             />
 
+            <div className="portfolio-projects">
 
             {this.props.projects.map(project => {
               return(
-            <div className="portfolio-projects">
-
-              <a href={`./`} className="project-link">
+              <div className="project-thumbnail">
+              {/* <a href={`./`} className="project-link"> */}
                 <img
                   className="project-img"
-                  src={require('../../media/randproj.PNG')}
+                  src={project.image}
                 />
-              </a>
-              <div onClick={this.clickHandler} className="project-name">
+              {/* </a> */}
+              {/* <div onClick={this.clickHandler} className="project-name">
                 {project.title}
               </div>
               <div className="project-description">
@@ -135,11 +135,12 @@ class Portfolio extends Component {
               </div>
               <ul className="project-stack">
                 <li className="stack-item">React</li>
-              </ul>
+              </ul> */}
 
+              </div>
+            )})}
 
             </div>
-            )})}
             {/* <div className="portfolio-projects">
               <a
                 href={this.props.projects[projectIndex].link}
