@@ -62,23 +62,36 @@
     width: 75vw;
     height: 70vh;
     display: flex;
-    justify-content: space-around;
-    align-content: center;
-    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
     box-shadow: 0px 0px 20px rgb(170, 228, 238);
+}
+
+.project-thumbnail{
+    width: 15vw;
+    height: 8vw;
+    margin: 1vh 1vw;
 }
 
 .project-link{
     /* text-align: center; */
-    width: 45%;
+    /* width: 45%; */
     display: flex;
     align-content: center;
     justify-content: center;
-    margin: 0 20.8vw;
+    /* margin: 0 20.8vw; */
+}
+
+.project-img{
+    width: 15vw;
+    height: 15vh;
+    opacity: .8;
 }
 
 .project-img:hover{
-    opacity: .9;
+    opacity: 1;
+    box-shadow: 0px 0px 15px rgb(170, 228, 238);
 }
 
 .project-name{

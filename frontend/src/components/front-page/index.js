@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-
+import { connect } from 'react-redux';
+import { getProjects } from '../../actions';
 import ReactCursorPosition from 'react-cursor-position';
 
 
@@ -14,6 +15,10 @@ class Front extends Component{
             toggleOptions: false,
         };
 
+    }
+
+    componentDidMount() {
+        this.props.getProjects();
     }
 
     render(){
@@ -40,4 +45,12 @@ class Front extends Component{
     }
 }
 
-export default Front;
+const mapStateToProps = state => {
+    return {
+      projects: state.projects,
+    };
+  };
+  
+export default connect(mapStateToProps, { getProjects })(Front);
+
+// export default Front;

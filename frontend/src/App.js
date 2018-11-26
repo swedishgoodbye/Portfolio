@@ -36,7 +36,7 @@ class App extends Component {
         {/* <div className='main'> */}
         <Route exact path={"/"} render={() => <Front />} />
         <Route exact path={"/about"} render={() => <About />} /> 
-        <Route exact path={"/projects"} render={() => <Portfolio />} />
+        <Route exact path={"/projects"} render={props => <Portfolio {...props} />}/>
         <Route exact path={"/contact"} render={() => <Contact />} />
         {/* <Route href="#portfolio" ref={(section) => { this.Portfolio = section; }} render={props => <Portfolio {...props} />} /> */}
         {/* <Route href="#about" ref={(section) => { this.About = section; }} render={() => <About />} /> */}
