@@ -2,98 +2,92 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
+import Modal from 'react-modal';
 
 import { getProjects } from '../../actions';
 import './portfolio.css';
 
+// Modal.setAppElement('#yourAppElement')
+
 class Portfolio extends Component {
   constructor(props) {
     super(props);
+    // this.openModal = this.openModal.bind(this);
+    // this.afterOpenModal = this.afterOpenModal.bind(this);
+    // this.closeModal = this.closeModal.bind(this);
     this.state = {
       toggle: false,
       projects: this.props.projects,
       projectIndex: 0,
       url: '',
+      modalIsOpen: false,
       //   currentProject: this.props.projects[this.projectIndex],
       started: false,
       // currentProject:this.props.projects[this.state.projectIndex],
     };
-    
-    console.log('const', this.props)
-    
-    // this.clickRightHandler = this.clickRightHandler.bind (this);
+
+
+  }
+
+  openModal = () => {
+    this.setState({ modalIsOpen: true});
+    console.log(this.state.modalIsOpen);
+  }
+
+
+  closeModal = () => {
+    this.setState({ modalIsOpen: false});
+    console.log(this.state.modalIsOpen);
   }
   
   componentDidMount() {
     this.props.getProjects();
 
-    console.log('mounted');
-          
-          this.setState = {
-            projectIndex: 0,
-            projects: this.props.projects,
-          };
-      
-          // console.log('selectedF', this.state.started);
+          // this.setState = {
+          //   projectIndex: 0,
+          //   projects: this.props.projects,
+          // };
         }
 
   initialSelector = () => {
-
-    console.log('init', this.props.projects.length);
-
     if(this.props.projects.length > 0){
       console.log('innernit', this.props.projects);
-      this.setState = {
-          projects: this.props.projects,
+      // this.setState = {
+      //     projects: this.props.projects,
         
-      }
+      // }
     }
-
-    
-    
-
-    // if (this.state.started == false) {
-    //   console.log('init', this.state);
-    //   return this.setState({
-    //     started: true,
-    //     // currentProject:this.props.projects[0],
-    //     projects: this.props.projects,
-    //     url: this.props.projects[0],
-    //   });
-    // }
   };
 
   clickRightHandler = () => {
     if (this.state.projectIndex <= this.props.projects.length - 1) {
-      console.log(this.state.projectIndex)
       return ++this.state.projectIndex;
     } else {
       return console.log('last item');
     }
   };
+
   clickLeftHandler = () => {
     if (this.state.projectIndex >= 0) {
-      console.log(this.state.projectIndex)
       return --this.state.projectIndex;
     } else {
       return console.log('first item');
     }
   };
-  clickHandler = () => {
 
-    // for(let i = 0; i < this.props.projects.length; i++){
-    //   let x = [];
-      
-      console.log('click', this);
-    // }
+  // openModal() {
+  //   this.setState = {modalIsOpen: true};
+  //   console.log('opening');
+  // }
 
+  // afterOpenModal() {
+  //   console.log('opened');
+  // }
 
-
-    // console.log('lick', this.state.projectIndex);
-    // console.log('cick', this.props.projects[this.state.projectIndex].link);
-    
-  };
-
+  // closeModal() {
+  //   this.setState = {modalIsOpen: false};
+  //   console.log('closing');
+  // }
 
   render() {
     this.initialSelector();
@@ -106,7 +100,7 @@ class Portfolio extends Component {
 
         <div className="portfolio-display">
 
-          <Link className="page-exit" to={{ pathname: `/` }}>
+          <Link className="portfolio-page-exit" to={{ pathname: `/` }}>
             {/* <img src={require('../../media/x.png')}/> */}
             X
           </Link>
@@ -125,7 +119,21 @@ class Portfolio extends Component {
                 <img
                   className="project-img"
                   src={project.image}
+                  onClick={this.openModal}
                 />
+                <Modal
+                  isOpen={this.state.modalIsOpen}
+                  // onAfterOpen={this.afterOpenModal}
+                  // onRequestClose={this.closeModal}
+                  className={'project-modal'}
+                  overlayClassName={'project-overlay'}
+                  >
+
+                  <div className='modal-exit' onClick={this.closeModal}>
+                    X
+                  </div> 
+                
+                </Modal>
               {/* </a> */}
               {/* <div onClick={this.clickHandler} className="project-name">
                 {project.title}

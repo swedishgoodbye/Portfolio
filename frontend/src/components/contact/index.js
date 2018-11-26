@@ -10,7 +10,7 @@ class Contact extends Component{
         return(
             <div className="contact-page main-item">
                     {/* <h1 className="contact-title">Get In Touch</h1> */}
-                    <Link className='page-exit' to={{pathname: `/`}}>
+                    <Link className='contact-page-exit' to={{pathname: `/`}}>
                         {/* <img src={require('../../media/x.png')}/> */}
                         X
                     </Link>
