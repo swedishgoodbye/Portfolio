@@ -77,6 +77,7 @@ class Portfolio extends Component {
                     className="project-img"
                     src={project.image}
                     onClick={this.openModal}
+                    alt={project.title}
                   />
 
                   <Modal
