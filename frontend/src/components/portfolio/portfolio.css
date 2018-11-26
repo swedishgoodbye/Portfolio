@@ -26,13 +26,22 @@
     
 }
 
-.page-exit{
+.portfolio-page-exit{
     /* display: initial; */
-    opacity: .9;
+    opacity: .7;
     color: rgb(255, 254, 254);
-    
+    padding: 0 0 0 .5vw;
+    width: 2%;
     
 }
+
+.portfolio-page-exit:hover{
+    /* display: initial; */
+    opacity: .9;
+
+    
+}
+
 .portfolio-display-inner{
     display: flex;
     flex-direction: row;
@@ -72,6 +81,7 @@
     width: 15vw;
     height: 8vw;
     margin: 1vh 1vw;
+    cursor: pointer;
 }
 
 .project-link{
@@ -92,6 +102,52 @@
 .project-img:hover{
     opacity: 1;
     box-shadow: 0px 0px 15px rgb(170, 228, 238);
+}
+
+.project-modal {
+    position: absolute;
+    top: 5.2vh;
+    left: 5.52vw;
+    right: 40px;
+    /* bottom: 10vh; */
+    background: rgba(00, 19, 37);
+    width: 75vw;
+    height: 69.9vh;
+    border: 3px solid rgba(207, 230, 252, 0.685);
+    /* padding: .5vw; */
+  }
+
+.project-overlay {
+    position: fixed;
+    top: 9vh;
+    left: 7vw;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 19, 37);
+    height: 82vh;
+    width: 86vw;
+  }
+
+.project-modal:focus {
+    outline: 0;
+}
+
+.modal-exit{
+    /* display: initial; */
+    opacity: .7;
+    color: rgb(255, 254, 254);
+    padding: .5vw 0 0 1vw;
+    width: 1.2%;
+    margin: 0;
+    cursor: pointer;
+    
+}
+
+.modal-exit:hover{
+    /* display: initial; */
+    opacity: .9;
+
+    
 }
 
 .project-name{

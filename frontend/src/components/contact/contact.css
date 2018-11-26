@@ -20,7 +20,7 @@
     text-align: center;
 } */
 
-.page-exit{
+.contact-page-exit{
     /* display: initial; */
     opacity: .7;
     color: rgb(255, 254, 254);
@@ -29,7 +29,7 @@
     
 }
 
-.page-exit:hover{
+.contact-page-exit:hover{
     /* display: initial; */
     opacity: .9;
 
