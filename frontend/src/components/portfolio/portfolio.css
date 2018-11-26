@@ -1,45 +1,31 @@
 .portfolio-page{
     height: 100vh;
-    /* height: 960px; */
-    /* padding: 1%; */
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-content: center;
-    /* background: #1E3D5A; */
 }
-
-
 
 .portfolio-display{
     background: rgba(0, 19, 37, 0.733);
-    /* opacity: .7; */
     width: 85vw;
     height: 80vh;
     align-self: center;
     border: 3px solid rgba(207, 230, 252, 0.685);
-    /* display: flex; */
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: .5vw;
-    
 }
 
 .portfolio-page-exit{
-    /* display: initial; */
     opacity: .7;
     color: rgb(255, 254, 254);
     padding: 0 0 0 .5vw;
     width: 2%;
-    
 }
 
 .portfolio-page-exit:hover{
-    /* display: initial; */
-    opacity: .9;
-
-    
+    opacity: .9;    
 }
 
 .portfolio-display-inner{
@@ -51,8 +37,6 @@
     opacity: .8;
 }
 
-
-
 .portfolio-display-arrow-left{
     width: 0; 
     height: 0; 
@@ -62,6 +46,7 @@
     cursor: pointer;
     text-shadow: 0px 0px 10px rgb(170, 228, 238);
 }
+
 .portfolio-display-arrow-left:hover{
     border-right-color: rgb(246, 250, 253);
 }
@@ -85,12 +70,9 @@
 }
 
 .project-link{
-    /* text-align: center; */
-    /* width: 45%; */
     display: flex;
     align-content: center;
     justify-content: center;
-    /* margin: 0 20.8vw; */
 }
 
 .project-img{
@@ -109,14 +91,12 @@
     top: 5.2vh;
     left: 5.52vw;
     right: 40px;
-    /* bottom: 10vh; */
     background: rgba(00, 19, 37);
     width: 75vw;
     height: 69.9vh;
     border: 3px solid rgba(207, 230, 252, 0.685);
-    /* padding: .5vw; */
   }
-
+  
 .project-overlay {
     position: fixed;
     top: 9vh;
@@ -133,7 +113,6 @@
 }
 
 .modal-exit{
-    /* display: initial; */
     opacity: .7;
     color: rgb(255, 254, 254);
     padding: .5vw 0 0 1vw;
@@ -144,10 +123,7 @@
 }
 
 .modal-exit:hover{
-    /* display: initial; */
     opacity: .9;
-
-    
 }
 
 .project-name{
@@ -172,7 +148,6 @@
     color: rgb(255, 254, 254);
     font-family: 'Raleway', sans-serif;
     font-size: 120%;
-
 }
 
 .portfolio-display-arrow-right{
@@ -183,6 +158,7 @@
     border-left: 15px solid rgb(207, 230, 252);
     cursor: pointer;
 }
+
 .portfolio-display-arrow-right:hover{
     border-left-color: rgb(246, 250, 253);
 }
