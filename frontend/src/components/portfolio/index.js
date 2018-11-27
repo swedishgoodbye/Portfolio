@@ -21,9 +21,7 @@ class Portfolio extends Component {
       projectIndex: 0,
       url: '',
       modalIsOpen: false,
-      //   currentProject: this.props.projects[this.projectIndex],
-      started: false,
-      // currentProject:this.props.projects[this.state.projectIndex],
+      selected: {},
     };
 
 
@@ -75,19 +73,9 @@ class Portfolio extends Component {
     }
   };
 
-  // openModal() {
-  //   this.setState = {modalIsOpen: true};
-  //   console.log('opening');
-  // }
-
-  // afterOpenModal() {
-  //   console.log('opened');
-  // }
-
-  // closeModal() {
-  //   this.setState = {modalIsOpen: false};
-  //   console.log('closing');
-  // }
+  imgSelectHandler = e => {
+    this.setState({ [this.state.selected]: e.target.value })
+  }
 
   render() {
     this.initialSelector();
@@ -112,6 +100,7 @@ class Portfolio extends Component {
 
             <div className="portfolio-projects">
 
+<<<<<<< Updated upstream
             {this.props.projects.map(project => {
               return(
               <div className="project-thumbnail">
@@ -147,6 +136,47 @@ class Portfolio extends Component {
 
               </div>
             )})}
+=======
+              {this.props.projects.map(project => {
+
+                return(
+
+                <div className="project-thumbnail">
+                
+                <Link
+                  to={{
+                  pathname: `/projects/${project.id}`,
+                  state: {
+                      project: project
+                    }
+                  }}
+                >
+                  <img
+                    className="project-img"
+                    src={project.image}
+                    onClick={this.openModal}
+                    alt={project.title}
+                  />
+                  </Link>
+
+                  <Modal
+                    isOpen={this.state.modalIsOpen}
+                    className={'project-modal'}
+                    overlayClassName={'project-overlay'}
+                    >
+
+                    <div className='modal-exit' onClick={this.closeModal}>
+                      X
+                    </div> 
+                  
+                  </Modal>
+
+                </div>
+
+                );
+
+              })}
+>>>>>>> Stashed changes
 
             </div>
             {/* <div className="portfolio-projects">
