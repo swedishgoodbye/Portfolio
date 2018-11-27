@@ -21,15 +21,27 @@ class Portfolio extends Component {
       projectIndex: 0,
       url: '',
       modalIsOpen: false,
-      selected: {},
+      // selected: {},
     };
 
 
   }
 
-  openModal = () => {
-    this.setState({ modalIsOpen: true});
-    console.log(this.state.modalIsOpen);
+  openModal = e => {
+    let projects = this.props.projects;
+
+    for(let i = 0; i <= projects.length; i++){
+      console.log(projects[i].title)
+      // if(e.target.alt == projects[i].title){
+      //   console.log('success')
+      // }
+    }
+
+    this.setState({
+       modalIsOpen: true,
+      });
+    
+    // console.log(this.state.modalIsOpen, e.target.alt);
   }
 
 
@@ -73,9 +85,9 @@ class Portfolio extends Component {
     }
   };
 
-  imgSelectHandler = e => {
-    this.setState({ [this.state.selected]: e.target.value })
-  }
+  // imgSelectHandler = e => {
+  //   this.setState({ [this.state.selected]: e.target.value })
+  // }
 
   render() {
     this.initialSelector();
@@ -100,64 +112,28 @@ class Portfolio extends Component {
 
             <div className="portfolio-projects">
 
-<<<<<<< Updated upstream
-            {this.props.projects.map(project => {
-              return(
-              <div className="project-thumbnail">
-              {/* <a href={`./`} className="project-link"> */}
-                <img
-                  className="project-img"
-                  src={project.image}
-                  onClick={this.openModal}
-                />
-                <Modal
-                  isOpen={this.state.modalIsOpen}
-                  // onAfterOpen={this.afterOpenModal}
-                  // onRequestClose={this.closeModal}
-                  className={'project-modal'}
-                  overlayClassName={'project-overlay'}
-                  >
-
-                  <div className='modal-exit' onClick={this.closeModal}>
-                    X
-                  </div> 
-                
-                </Modal>
-              {/* </a> */}
-              {/* <div onClick={this.clickHandler} className="project-name">
-                {project.title}
-              </div>
-              <div className="project-description">
-                {project.description}
-              </div>
-              <ul className="project-stack">
-                <li className="stack-item">React</li>
-              </ul> */}
-
-              </div>
-            )})}
-=======
               {this.props.projects.map(project => {
 
                 return(
 
                 <div className="project-thumbnail">
                 
-                <Link
+                {/* <Link
                   to={{
                   pathname: `/projects/${project.id}`,
                   state: {
                       project: project
                     }
                   }}
-                >
+                > */}
                   <img
                     className="project-img"
                     src={project.image}
                     onClick={this.openModal}
                     alt={project.title}
+                    obj={project.title}
                   />
-                  </Link>
+                  {/* </Link> */}
 
                   <Modal
                     isOpen={this.state.modalIsOpen}
@@ -168,6 +144,9 @@ class Portfolio extends Component {
                     <div className='modal-exit' onClick={this.closeModal}>
                       X
                     </div> 
+                    <div className='modal-title'>
+                      {project.title}
+                    </div>
                   
                   </Modal>
 
@@ -176,7 +155,6 @@ class Portfolio extends Component {
                 );
 
               })}
->>>>>>> Stashed changes
 
             </div>
             {/* <div className="portfolio-projects">
