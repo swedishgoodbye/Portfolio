@@ -10,6 +10,7 @@ class Contact extends Component{
         return(
             <div className="contact-page main-item">
                     {/* <h1 className="contact-title">Get In Touch</h1> */}
+                <div className='contact-display'>
                     <Link className='contact-page-exit' to={{pathname: `/`}}>
                         {/* <img src={require('../../media/x.png')}/> */}
                         X
@@ -34,6 +35,7 @@ class Contact extends Component{
                             <a href="tel:(708)-971-9389" class="contact-item cellcontact" id="webcell">(708)-971-9389</a>
                             <a href="tel:(708)-971-9389" class="contact-item cellcontact" id="mobilecell">Call Me</a>
                         </div>
+                </div>
                 </div>
             </div>
         )

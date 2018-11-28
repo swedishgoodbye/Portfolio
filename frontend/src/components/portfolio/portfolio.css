@@ -126,6 +126,15 @@
     opacity: .9;
 }
 
+.modal-content{
+    display: flex;
+    align-content: space-between;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 75vw;
+    height: 69vh;
+}
+
 .modal-title{
     color: white;
 }
@@ -143,6 +152,7 @@
     padding: 0 5%;
     text-decoration: underline;
     font-size: 150%;
+    text-align: center;
 }
 
 .project-stack{
