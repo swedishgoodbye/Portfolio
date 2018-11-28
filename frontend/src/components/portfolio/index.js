@@ -17,13 +17,28 @@ class Portfolio extends Component {
       projectIndex: 0,
       url: '',
       modalIsOpen: false,
-      started: false,
+      // selected: {},
+
     };
   };
 
-  openModal = () => {
-    this.setState({ modalIsOpen: true});
-  };
+  openModal = e => {
+    let projects = this.props.projects;
+
+    for(let i = 0; i <= projects.length; i++){
+      console.log(projects[i].title)
+      // if(e.target.alt == projects[i].title){
+      //   console.log('success')
+      // }
+    }
+
+    this.setState({
+       modalIsOpen: true,
+      });
+    
+    // console.log(this.state.modalIsOpen, e.target.alt);
+  }
+
 
 
   closeModal = () => {
@@ -45,6 +60,10 @@ class Portfolio extends Component {
       return --this.state.projectIndex;
     };
   };
+
+  // imgSelectHandler = e => {
+  //   this.setState({ [this.state.selected]: e.target.value })
+  // }
 
 
   render() {
@@ -73,12 +92,25 @@ class Portfolio extends Component {
 
                 <div className="project-thumbnail">
 
+                
+                {/* <Link
+                  to={{
+                  pathname: `/projects/${project.id}`,
+                  state: {
+                      project: project
+                    }
+                  }}
+                > */}
+      
                   <img
                     className="project-img"
                     src={project.image}
                     onClick={this.openModal}
                     alt={project.title}
+                    obj={project.title}
                   />
+                  {/* </Link> */}
+
 
                   <Modal
                     isOpen={this.state.modalIsOpen}
@@ -89,6 +121,9 @@ class Portfolio extends Component {
                     <div className='modal-exit' onClick={this.closeModal}>
                       X
                     </div> 
+                    <div className='modal-title'>
+                      {project.title}
+                    </div>
                   
                   </Modal>
 

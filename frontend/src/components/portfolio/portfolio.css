@@ -126,6 +126,10 @@
     opacity: .9;
 }
 
+.modal-title{
+    color: white;
+}
+
 .project-name{
     text-align: center;
     font-family: 'Raleway', sans-serif;
