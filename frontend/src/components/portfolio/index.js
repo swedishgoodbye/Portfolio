@@ -17,26 +17,31 @@ class Portfolio extends Component {
       projectIndex: 0,
       url: '',
       modalIsOpen: false,
-      // selected: {},
-
+      selected: {},
     };
   };
 
   openModal = e => {
-    let projects = this.props.projects;
+    // let projects = this.state.projects;
 
-    for(let i = 0; i <= projects.length; i++){
-      console.log(projects[i].title)
-      // if(e.target.alt == projects[i].title){
-      //   console.log('success')
-      // }
+
+
+    for(let i = 0; i < this.state.projects.length; i++){
+      console.log(i, this.state.projects[i].title)
+      if(e.target.alt == this.state.projects[i].title){
+        this.setState({
+          selected: this.state.projects[i],
+          modalIsOpen: true,
+        })
+      }
     }
+    console.log(this.state)
 
-    this.setState({
-       modalIsOpen: true,
-      });
+      // this.setState({
+      //       modalIsOpen: true,
+      //       });   
     
-    // console.log(this.state.modalIsOpen, e.target.alt);
+    // console.log('targ', this.state.projects[0].title);
   }
 
 
@@ -47,6 +52,21 @@ class Portfolio extends Component {
   
   componentDidMount() {
     this.props.getProjects();
+
+      this.setState ({
+                projectIndex: 0,
+                projects: this.props.projects,
+              });        
+        }
+
+  initialSelector = () => {
+    if(this.props.projects.length > 0){
+      console.log('innernit', this.props.projects);
+      // this.setState = {
+      //     projects: this.props.projects,
+        
+      // }
+    }
   };
 
   clickRightHandler = () => {
@@ -67,6 +87,10 @@ class Portfolio extends Component {
 
 
   render() {
+
+    let projects = this.props.projects;
+    let projectIndex = this.state.projectIndex;
+    let selected = this.state.selected;
 
     return (
 
@@ -121,8 +145,18 @@ class Portfolio extends Component {
                     <div className='modal-exit' onClick={this.closeModal}>
                       X
                     </div> 
-                    <div className='modal-title'>
-                      {project.title}
+                    <div className='modal-content'>
+                    <a href={`http://www.${selected.link}`} className='project-link'>
+                      <img src={selected.image} className='project-img' />
+                    </a>
+                      <h1 className='project-name'>
+                        {selected.title}
+                      </h1>
+
+                        <p className='project-description'>{selected.description}</p>
+
+
+                      
                     </div>
                   
                   </Modal>
