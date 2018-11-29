@@ -10,11 +10,8 @@ class About extends Component{
         return(
             <div className='about-page main-item'>
 
-            {/* <div className='about-content'> */}
-
                 <div className='about-display'>
                                 <Link className='page-exit' to={{pathname: `/`}}>
-                        {/* <img src={require('../../media/x.png')}/> */}
                         X
                     </Link>
 
@@ -43,17 +40,15 @@ class About extends Component{
                                 <li className='about-status info-item list-item'><a href='https://github.com/swedishgoodbye' className='about-status info-item about-link'>Status: Self-Educating / Seeking Employment</a></li>
                             </ul>
 
-
                         </div>
 
                     </div>
 
                 </div>
                 
-                {/* </div> */}
             </div>
-        )
-    }
-}
+        );
+    };
+};
 
 export default About;

@@ -22,12 +22,10 @@ class Portfolio extends Component {
   };
 
   openModal = e => {
-    // let projects = this.state.projects;
 
 
 
     for(let i = 0; i < this.state.projects.length; i++){
-      console.log(i, this.state.projects[i].title)
       if(e.target.alt == this.state.projects[i].title){
         this.setState({
           selected: this.state.projects[i],
@@ -35,13 +33,6 @@ class Portfolio extends Component {
         })
       }
     }
-    console.log(this.state)
-
-      // this.setState({
-      //       modalIsOpen: true,
-      //       });   
-    
-    // console.log('targ', this.state.projects[0].title);
   }
 
 
@@ -52,44 +43,14 @@ class Portfolio extends Component {
   
   componentDidMount() {
     this.props.getProjects();
-
-      this.setState ({
-                projectIndex: 0,
-                projects: this.props.projects,
-              });        
-        }
-
-  initialSelector = () => {
-    if(this.props.projects.length > 0){
-      console.log('innernit', this.props.projects);
-      // this.setState = {
-      //     projects: this.props.projects,
-        
-      // }
-    }
-  };
-
-  clickRightHandler = () => {
-    if (this.state.projectIndex <= this.props.projects.length - 1) {
-      return ++this.state.projectIndex;
-    };
-  };
-
-  clickLeftHandler = () => {
-    if (this.state.projectIndex >= 0) {
-      return --this.state.projectIndex;
-    };
-  };
-
-  // imgSelectHandler = e => {
-  //   this.setState({ [this.state.selected]: e.target.value })
-  // }
-
+    this.setState ({
+      projectIndex: 0,
+      projects: this.props.projects,
+    });        
+  }
 
   render() {
 
-    let projects = this.props.projects;
-    let projectIndex = this.state.projectIndex;
     let selected = this.state.selected;
 
     return (
@@ -104,28 +65,14 @@ class Portfolio extends Component {
 
           <div className="portfolio-display-inner">
 
-            <div className="portfolio-display-arrow-left" 
-            onClick={this.clickLeftHandler}
-            />
-
             <div className="portfolio-projects">
 
               {this.props.projects.map(project => {
 
                 return(
 
-                <div className="project-thumbnail">
+                <div className="project-thumbnail">      
 
-                
-                {/* <Link
-                  to={{
-                  pathname: `/projects/${project.id}`,
-                  state: {
-                      project: project
-                    }
-                  }}
-                > */}
-      
                   <img
                     className="project-img"
                     src={project.image}
@@ -133,46 +80,37 @@ class Portfolio extends Component {
                     alt={project.title}
                     obj={project.title}
                   />
-                  {/* </Link> */}
 
-
-                  <Modal
-                    isOpen={this.state.modalIsOpen}
-                    className={'project-modal'}
-                    overlayClassName={'project-overlay'}
+                    <Modal
+                      isOpen={this.state.modalIsOpen}
+                      className={'project-modal'}
+                      overlayClassName={'project-overlay'}
                     >
 
-                    <div className='modal-exit' onClick={this.closeModal}>
-                      X
-                    </div> 
-                    <div className='modal-content'>
-                    <a href={`http://www.${selected.link}`} className='project-link'>
-                      <img src={selected.image} className='project-img' alt={selected.title} />
-                    </a>
-                      <h1 className='project-name'>
-                        {selected.title}
-                      </h1>
+                      <div className='modal-exit' onClick={this.closeModal}>
+                        X
+                      </div>
+
+                      <div className='modal-content'>
+
+                        <a href={`http://www.${selected.link}`} className='project-link'>
+                          <img src={selected.image} className='project-img' alt={selected.title} />
+                        </a>
+                        <h1 className='project-name'>
+                          {selected.title}
+                        </h1>
 
                         <p className='project-description'>{selected.description}</p>
 
-
-                      
-                    </div>
-                  
-                  </Modal>
+                      </div>
+                    
+                    </Modal>
 
                 </div>
 
-                );
-
-              })}
+                );})}
 
             </div>
-
-            <div
-              onClick={this.clickRightHandler}
-              className="portfolio-display-arrow-right"
-            />
 
           </div>
 
