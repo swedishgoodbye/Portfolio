@@ -147,7 +147,7 @@ class Portfolio extends Component {
                     </div> 
                     <div className='modal-content'>
                     <a href={`http://www.${selected.link}`} className='project-link'>
-                      <img src={selected.image} className='project-img' />
+                      <img src={selected.image} className='project-img' alt={selected.title} />
                     </a>
                       <h1 className='project-name'>
                         {selected.title}
