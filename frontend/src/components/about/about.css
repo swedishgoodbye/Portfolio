@@ -52,7 +52,7 @@
     align-content: space-between;
     border: 1px solid rgba(207, 230, 252, 0.685);
     box-shadow: 0px 0px 20px rgb(170, 228, 238);
-    width: 25vw;
+    width: 60vw;
     height: 75vh;
     transition: all 1.5s ease;
 }
@@ -68,11 +68,11 @@
 } */
 
 .about-name{
-    font-size: 2vw;
+    font-size: 4.5vw;
     background: rgb(170, 228, 238);
     color: black;
-    width: 25vw;
-    height: 8vh;
+    width: 60vw;
+    height: 10vh;
     text-align: center;
     display: flex;
     align-items: center;
@@ -87,11 +87,11 @@
 }
 
 .about-title{
-    font-size: 1.5vw;
+    font-size: 3.5vw;
     background: rgba(0, 19, 37, 0.733);
     color: rgb(170, 228, 238);
-    width: 25vw;
-    height: 6vh;
+    width: 60vw;
+    height: 8vh;
     text-align: center;
     display: flex;
     align-items: center;
@@ -107,16 +107,25 @@
 
 .about-info{
     text-align: center;
-    font-size: 1.2vw;
-    line-height: 6vh;
-    width: 25vw;
-    height: 19vh;
-    margin-bottom: -.6vh;
+    font-size: 2.2vh;
+    line-height: 3.5vh;
+    width: 60vw;
+    height: 25vh;
+    /* margin-bottom: -.6vh; */
     background: rgb(170, 228, 238);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .info-item{
     color: black;
+    width: 60vw;
+}
+
+.list-item{
+    /* width: 50vw; */
 }
 
 .list-item:hover{
@@ -126,17 +135,23 @@
 }
 
 .about-link{
-    width: 25vw;
+    width: 60vw;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: underline;
 }
 
 .about-link:hover{
     color: white;
     text-decoration: underline;
     transition: all .4s ease;
+}
+
+.about-img{
+    height: 20vh;
+    width: 40vw;
 }
 
 /* .about-content:hover .about-info{
