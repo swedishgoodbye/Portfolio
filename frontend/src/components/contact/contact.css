@@ -70,15 +70,18 @@
 .contact-form-components{
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
+    justify-content: center;
     width: 70vw;
-    height: 60vh;
+    height: 42vh;
 }
 
 .contact-form-components input{
     margin-bottom: 1%;
     /* height: 15%; */
+    width: 60vw;
     opacity: .8;
+    font-size: 71%;
 }
 
 .contact-form-components input:hover{
@@ -87,6 +90,9 @@
 
 .contact-form-components textarea{
     opacity: .8;
+    width: 70vw;
+    height: 30vh;
+    margin-bottom: 1%;
 }
 
 .contact-form-components textarea:hover{
@@ -96,10 +102,12 @@
 
 
 .contact-form-components a{
-    margin: 2% 0 4% 55vh;
+    /* display: flex; */
+    /* align-content: center; */
+    margin: 2vh 0 4% 0;
     background: rgb(0, 19, 37);
     color: rgb(168, 164, 164);
-    width: 20%;
+    width: 30vw;
     padding: 2% 0%;
     padding-right: .5%;
     text-align: center;
@@ -159,7 +167,7 @@
 
 .contact-linked{
     opacity: .8;
-    width: 12vw;
+    width: 40vw;
     transition: all 0.3s ease;
 }
 
@@ -178,6 +186,10 @@ a:hover {
 
     color: rgb(255, 255, 255);
     transition: all 0.3s ease;
+}
+
+.cellcontact{
+    font-size: 6vw;
 }
 
 
