@@ -104,9 +104,9 @@ class Portfolio extends Component {
 
           <div className="portfolio-display-inner">
 
-            <div className="portfolio-display-arrow-left" 
+            {/* <div className="portfolio-display-arrow-left" 
             onClick={this.clickLeftHandler}
-            />
+            /> */}
 
             <div className="portfolio-projects">
 
@@ -147,7 +147,7 @@ class Portfolio extends Component {
                     </div> 
                     <div className='modal-content'>
                     <a href={`http://www.${selected.link}`} className='project-link'>
-                      <img src={selected.image} className='project-img' alt={selected.title} />
+                      <img src={selected.image} className='modal-img' alt={selected.title} />
                     </a>
                       <h1 className='project-name'>
                         {selected.title}
@@ -169,10 +169,10 @@ class Portfolio extends Component {
 
             </div>
 
-            <div
+            {/* <div
               onClick={this.clickRightHandler}
               className="portfolio-display-arrow-right"
-            />
+            /> */}
 
           </div>
 
