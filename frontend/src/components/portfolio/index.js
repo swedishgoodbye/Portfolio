@@ -114,7 +114,7 @@ class Portfolio extends Component {
                         <p className='project-description'>{selected.description}</p>
 
                       </div>
-                    
+                    </div>
                     </Modal>
 
                 </div>
