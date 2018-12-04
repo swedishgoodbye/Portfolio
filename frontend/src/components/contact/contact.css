@@ -19,12 +19,10 @@
 
 .contact-display{
     background: rgba(0, 19, 37, 0.733);
-    /* opacity: .7; */
     width: 85vw;
     height: 80vh;
     align-self: center;
     border: 3px solid rgba(207, 230, 252, 0.685);
-    /* display: flex; */
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -58,7 +56,6 @@
 
 .contact-form-components input{
     margin-bottom: 1%;
-    /* height: 15%; */
     width: 60vw;
     opacity: .8;
     font-size: 71%;
@@ -80,8 +77,6 @@
 }
 
 .contact-form-components a{
-    /* display: flex; */
-    /* align-content: center; */
     margin: 2vh 0 4% 0;
     background: rgb(0, 19, 37);
     color: rgb(168, 164, 164);
