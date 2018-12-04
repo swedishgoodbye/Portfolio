@@ -65,6 +65,11 @@ class Portfolio extends Component {
 
           <div className="portfolio-display-inner">
 
+            {/* <div className="portfolio-display-arrow-left" 
+            onClick={this.clickLeftHandler}
+            /> */}
+
+
             <div className="portfolio-projects">
 
               {this.props.projects.map(project => {
@@ -87,10 +92,16 @@ class Portfolio extends Component {
                       overlayClassName={'project-overlay'}
                     >
 
-                      <div className='modal-exit' onClick={this.closeModal}>
-                        X
-                      </div>
-
+                    <div className='modal-exit' onClick={this.closeModal}>
+                      X
+                    </div> 
+                    <div className='modal-content'>
+                    <a href={`http://www.${selected.link}`} className='project-link'>
+                      <img src={selected.image} className='modal-img' alt={selected.title} />
+                    </a>
+                      <h1 className='project-name'>
+                        {selected.title}
+                      </h1>
                       <div className='modal-content'>
 
                         <a href={`http://www.${selected.link}`} className='project-link'>
@@ -111,6 +122,11 @@ class Portfolio extends Component {
                 );})}
 
             </div>
+
+            {/* <div
+              onClick={this.clickRightHandler}
+              className="portfolio-display-arrow-right"
+            /> */}
 
           </div>
 
