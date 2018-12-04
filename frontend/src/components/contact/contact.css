@@ -1,39 +1,20 @@
 .contact-page{
-    /* height: 980px; */
-    height: 100vh;
-    /* padding: 1%; */
+    height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* padding-top: 1vh; */
-    /* background: #1E3D5A; */
+    padding-top: 1vh;
 }
 
-/* .contact-header{
-    font-family: 'Raleway', sans-serif;
-    color: #D0D0D0; */
-    /*text-shadow: 0px 0px 200px #000;*/
-    /* font-size: 800%;
-    margin-right: 32px;
-    margin-bottom: 0px;
-    margin-top: 30px;
-    text-align: center;
-} */
-
 .contact-page-exit{
-    /* display: initial; */
     opacity: .7;
     color: rgb(255, 254, 254);
     padding: 0 0 0 1vw;
     width: 2%;
-    
 }
 
 .contact-page-exit:hover{
-    /* display: initial; */
-    opacity: .9;
-
-    
+    opacity: .9;    
 }
 
 .contact-display{
@@ -63,8 +44,7 @@
     display: flex;
     justify-content: center;
     height: 40vh;
-    width: 70vw;
-
+    width: 90vw;
 }
 
 .contact-form-components{
@@ -99,8 +79,6 @@
     opacity: .9;
 }
 
-
-
 .contact-form-components a{
     /* display: flex; */
     /* align-content: center; */
@@ -115,7 +93,6 @@
     font-weight: 600;
     opacity: .7;
     transition: all 0.5s ease;
-
 }
 
 .contact-form-components a:hover{
@@ -123,12 +100,8 @@
     color: white;
     transition: all 0.3s ease;
 }
-/* .contact-form-components textarea{
-    height: 50%;
-} */
 
-.contactlist {
-    
+.contactlist {    
     opacity: .70;
     font-family: 'Oswald', sans-serif;
     font-size: 2vw;
@@ -145,15 +118,8 @@
     margin-top: 8%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 25vh;
-   
+    justify-content: space-evenly;       
 }
-
-/* .contactlist a{
-    text-decoration: none;
-    color: 
-} */
 
 .contact-git{
     display: flex;

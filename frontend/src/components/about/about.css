@@ -1,40 +1,21 @@
 .about-page{
-    /* width: 85vw;
-    height: 80vh;
-    padding: 1%;
-    display: flex;
-    flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: flex-start; */
-    /* background: #1E3D5A; */
-    /* font-family: 'Raleway', sans-serif;
-    transition: all 0.5s ease;
-    align-self: center; */
     height: 100vh;
-    /* height: 960px; */
-    /* padding: 1%; */
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-content: center;
-    /* background: #1E3D5A; */
 }
 
 .about-display{
     background: rgba(0, 19, 37, 0.733);
-    /* opacity: .7; */
     width: 85vw;
     height: 80vh;
     align-self: center;
     border: 3px solid rgba(207, 230, 252, 0.685);
-    /* display: flex; */
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: .5vw;
 }
-
-
 
 .about-display-inner{
     display: flex;
@@ -56,16 +37,6 @@
     height: 75vh;
     transition: all 1.5s ease;
 }
-
-/* .about-content:hover{
-    background: rgba(207, 230, 252, 0.397);
-    transition: all 0.5s ease;
-} */
-
-/* .about-content:hover .about-name{
-    background: rgba(170, 228, 238, 0.37);
-    transition: all 0.5s ease;
-} */
 
 .about-name{
     font-size: 4.5vw;
@@ -165,3 +136,4 @@
 } */
 
 /* .about-info */
+
