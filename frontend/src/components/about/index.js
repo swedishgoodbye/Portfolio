@@ -26,6 +26,8 @@ class About extends Component{
                             <img src={require('../../media/profile.PNG')} 
                             className='about-img' />
 
+                            <div className='about-content-text'>
+
                             <h1 className='about-name'>
                                 <a className='about-name about-link' href='http://opticalfalicy.com'>
                                     Brett Sullivan
@@ -43,6 +45,7 @@ class About extends Component{
                                 <li className='about-education info-item list-item'><a href='https://www.lambdaschool.com' className='about-education info-item about-link'>Education: Lambda School</a></li>
                                 <li className='about-status info-item list-item'><a href='https://github.com/swedishgoodbye' className='about-status info-item about-link'>Status: Self-Educating / Seeking Employment</a></li>
                             </ul>
+                            </div>
 
 
                         </div>

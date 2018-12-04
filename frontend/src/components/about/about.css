@@ -46,16 +46,20 @@
 .about-content{
     background: rgba(0, 19, 37, 0.438);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    align-content: space-between;
+    /* align-content: space-between; */
     border: 1px solid rgba(207, 230, 252, 0.685);
     box-shadow: 0px 0px 20px rgb(170, 228, 238);
     width: 60vw;
     height: 75vh;
     transition: all 1.5s ease;
+    font-family: 'Raleway', sans-serif;
+    /* font-weight: 8                         00; */
 }
+
+
 
 /* .about-content:hover{
     background: rgba(207, 230, 252, 0.397);
@@ -72,12 +76,13 @@
     background: rgb(170, 228, 238);
     color: black;
     width: 60vw;
-    height: 10vh;
+    height: 8vh;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 1.5s ease;
+    font-weight: 600;
 }
 
 .about-name:hover{
@@ -88,7 +93,7 @@
 
 .about-title{
     font-size: 3.5vw;
-    background: rgba(0, 19, 37, 0.733);
+    background: rgb(1, 27, 51);
     color: rgb(170, 228, 238);
     width: 60vw;
     height: 8vh;
@@ -107,10 +112,10 @@
 
 .about-info{
     text-align: center;
-    font-size: 2.2vh;
+    font-size: 2vh;
     line-height: 3.5vh;
     width: 60vw;
-    height: 25vh;
+    height: 15vh;
     /* margin-bottom: -.6vh; */
     background: rgb(170, 228, 238);
     display: flex;
@@ -150,8 +155,10 @@
 }
 
 .about-img{
-    height: 20vh;
-    width: 40vw;
+    /* height: 25vh;
+    width: 50vw; */
+    max-width: 40vw;
+    height: auto;
 }
 
 /* .about-content:hover .about-info{
@@ -165,3 +172,96 @@
 } */
 
 /* .about-info */
+
+@media screen and (min-width: 800px){
+
+    .about-display{
+        width: 80vw;
+    }
+
+    .about-content{
+        width: 50vw;
+
+    }
+
+    .about-name{
+        height: 8vh;
+        font-size: 3.5vw;
+        width: 50vw;
+    }
+    .about-title{
+        height: 8vh;
+        font-size: 3vw;
+        width: 50vw;
+    }
+    .about-info{
+        height: 12vh;
+        width: 50vw;
+    }
+    .info-item{
+        /* height: 12vh; */
+        width: 50vw;
+    }
+    .about-img{
+        max-width: 30vw;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .about-img{
+        max-width: 25vw;
+    }
+}
+
+@media screen and (min-width: 1300px){
+    .about-display{
+        width: 70vw;
+    }
+    .about-content{
+        width: 35vw;
+    }
+    .about-name{
+        font-size: 2.5vw;
+        width: 35vw;
+    }
+    .about-title{
+        font-size: 2vw;
+        width: 35vw;
+    }
+    .about-info{
+        width: 35vw;
+    }
+    .info-item{
+        width: 35vw;
+    }
+    .about-img{
+        max-width: 20vw;
+    }
+    
+}
+
+@media screen and (min-width: 1600px){
+    .about-display{
+        width: 65vw;
+    }
+    .about-content{
+        width: 30vw;
+    }
+    .about-name{
+        width: 30vw;
+        font-size: 1.8vw;
+    }
+    .about-title{
+        width: 30vw;
+        font-size: 1.3vw;
+    }
+    .about-info{
+        width: 30vw;    
+    }
+    .info-item{
+        width: 30vw;    
+    }
+    .about-img{
+        max-width: 15vw;
+    }
+}
