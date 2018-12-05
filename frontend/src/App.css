@@ -68,7 +68,11 @@
   }
   
   .nav-item{
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25vw;
+    height: 5vh;
     padding: .2vw;
     cursor: pointer;
     border: 2px solid;
@@ -90,6 +94,22 @@
     transition: all .1s ease;
   }
   
+
+  @media screen and (min-width: 800px){
+    .nav-item{
+      width: 20vw;
+    }
+  }
+  @media screen and (min-width: 1300px){
+    .nav-item{
+      width: 15vw;
+    }
+  }
+  @media screen and (min-width: 1600px){
+    .nav-item{
+      width: 10vw;
+    }
+  }
   
   
   
