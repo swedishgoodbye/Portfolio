@@ -19,10 +19,12 @@ class About extends Component{
 
                         <div className='about-content'>
 
+
                             {/* <img src={require('../../media/profile.PNG')} 
                             className='about-img' /> */}
 
                             {/* <div className='about-content-text'> */}
+
 
                             <h1 className='about-name'>
                                 <a className='about-name about-link' href='http://opticalfalicy.com'>

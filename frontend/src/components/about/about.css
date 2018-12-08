@@ -39,27 +39,13 @@
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    /* align-content: space-between; */
     border: 1px solid rgba(207, 230, 252, 0.685);
     box-shadow: 0px 0px 20px rgb(170, 228, 238);
     width: 60vw;
     height: 75vh;
     transition: all 1.5s ease;
     font-family: 'Raleway', sans-serif;
-    /* font-weight: 8                         00; */
 }
-
-
-
-/* .about-content:hover{
-    background: rgba(207, 230, 252, 0.397);
-    transition: all 0.5s ease;
-} */
-
-/* .about-content:hover .about-name{
-    background: rgba(170, 228, 238, 0.37);
-    transition: all 0.5s ease;
-} */
 
 .about-name{
     font-size: 4.5vw;
@@ -106,7 +92,6 @@
     line-height: 3.5vh;
     width: 60vw;
     height: 15vh;
-    /* margin-bottom: -.6vh; */
     background: rgb(170, 228, 238);
     display: flex;
     flex-direction: column;
@@ -120,9 +105,6 @@
     font-weight: 600;
 }
 
-.list-item{
-    /* width: 50vw; */
-}
 
 .list-item:hover{
     background: rgba(37, 47, 56, 0.733);
@@ -146,23 +128,11 @@
 }
 
 .about-img{
-    /* height: 25vh;
-    width: 50vw; */
     max-width: 40vw;
     height: auto;
 }
 
-/* .about-content:hover .about-info{
-    background: rgba(0, 19, 37, 0.733);
-    
-}
 
-.about-content:hover .info-item{
-    background: rgba(0, 19, 37, 0.733);
-    
-} */
-
-/* .about-info */
 
 @media screen and (min-width: 800px){
 
@@ -190,7 +160,6 @@
         width: 50vw;
     }
     .info-item{
-        /* height: 12vh; */
         width: 50vw;
     }
     .about-img{

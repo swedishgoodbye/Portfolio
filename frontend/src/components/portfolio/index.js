@@ -65,11 +65,6 @@ class Portfolio extends Component {
 
           <div className="portfolio-display-inner">
 
-            {/* <div className="portfolio-display-arrow-left" 
-            onClick={this.clickLeftHandler}
-            /> */}
-
-
             <div className="portfolio-projects">
 
               {this.props.projects.map(project => {
@@ -116,11 +111,6 @@ class Portfolio extends Component {
                 );})}
 
             </div>
-
-            {/* <div
-              onClick={this.clickRightHandler}
-              className="portfolio-display-arrow-right"
-            /> */}
 
           </div>
 
