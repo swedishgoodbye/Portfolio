@@ -90,25 +90,19 @@ class Portfolio extends Component {
                     <div className='modal-exit' onClick={this.closeModal}>
                       X
                     </div> 
-                    <div className='modal-content'>
-                    <a href={`http://www.${selected.link}`} className='project-link'>
-                      <img src={selected.image} className='modal-img' alt={selected.title} />
-                    </a>
-                      <h1 className='project-name'>
-                        {selected.title}
-                      </h1>
+                    
+
                       <div className='modal-content'>
 
-                        <a href={`http://www.${selected.link}`} className='project-link'>
-                          <img src={selected.image} className='project-img' alt={selected.title} />
+                        <a href={`http://www.${selected.link}`} className='modal-link'>
+                          <img src={selected.image} className='modal-img' alt={selected.title} />
                         </a>
-                        <h1 className='project-name'>
+                        <h1 className='modal-name'>
                           {selected.title}
                         </h1>
 
-                        <p className='project-description'>{selected.description}</p>
+                        <p className='modal-description'>{selected.description}</p>
 
-                      </div>
                     </div>
                     </Modal>
 

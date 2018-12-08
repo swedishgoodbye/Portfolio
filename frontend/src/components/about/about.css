@@ -24,6 +24,15 @@
     height: 77vh;
 }
 
+.about-exit{
+    color: rgb(255, 254, 254);
+    opacity: .7;
+}
+
+.about-exit:hover{
+    opacity: 1;
+}
+
 .about-content{
     background: rgba(0, 19, 37, 0.438);
     display: flex;
@@ -93,6 +102,7 @@
 .info-item{
     color: black;
     width: 60vw;
+    font-weight: 600;
 }
 
 
@@ -136,17 +146,17 @@
     }
 
     .about-name{
-        height: 8vh;
+        height: 15vh;
         font-size: 3.5vw;
         width: 50vw;
     }
     .about-title{
-        height: 8vh;
+        height: 15vh;
         font-size: 3vw;
         width: 50vw;
     }
     .about-info{
-        height: 12vh;
+        height: 15vh;
         width: 50vw;
     }
     .info-item{
