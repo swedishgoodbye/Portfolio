@@ -10,8 +10,8 @@ export const DELETINGPROJECT = "DELETINGPROJECT";
 export const DELETEDPROJECT = "DELETEDPROJECT";
 export const ERROR = "ERROR";
 
-// const URL = "https://spbend.herokuapp.com/api/";
-const URL = "http://localhost:5000/api";
+const URL = "https://spbend.herokuapp.com/api";
+// const URL = "http://localhost:5000/api";
 
 export const getProjects = () => dispatch => {
 
@@ -20,7 +20,7 @@ export const getProjects = () => dispatch => {
     });
 
     axios
-        .get(`${URL}/fp`)
+        .get(`${URL}/fp/`)
         .then(response => {
             console.log("FINDING PROJECTS", response.data.length);
             dispatch({ type: FOUNDPROJECTS, projects: response.data 

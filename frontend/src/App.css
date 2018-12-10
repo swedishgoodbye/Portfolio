@@ -1,115 +1,109 @@
 /* ---------------------------------------------------  App  --------------------------------------------------- */
 
 @keyframes bgAnim{
-    from {background-position-y: 100%;}
-    to {background-position-y: 0%;}
-  }
+  from {background-position-y: 100%;}
+  to {background-position-y: 0%;}
+}
   
-  @keyframes textAnim{
-    from {color: rgb(41, 66, 88);}
-    to {color: rgb(178, 188, 189);}
-   
-  }
+@keyframes textAnim{
+  from {color: rgb(41, 66, 88);}
+  to {color: rgb(178, 188, 189);}
+ 
+}
+
+@keyframes bordAnim{
+  from {border-color: rgb(207, 230, 252);}
+  to {border-color: rgb(0, 19, 37);}
+}
   
-  @keyframes bordAnim{
-    from {border-color: rgb(207, 230, 252);}
-    to {border-color: rgb(0, 19, 37);}
-  }
-  
-  .App{
-    height: 100vh;
-    background: url('./media/thinBgD.JPG');
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: bgAnim 170s infinite alternate linear;
-    /* font-family: 'Raleway', sans-serif; */
-    width: 100%;
-  }
+.App{
+  height: 100vh;
+  background: url('./media/thinBgD.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: bgAnim 170s infinite alternate linear;
+  width: 100%;
+}
   
   /* ---------------------------------------------------  Landing Page  --------------------------------------------------- */
   
-  
-  .front-page{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-  }
-  
-  .settings{
-    align-self: flex-end;
-    /* justify-self: flex-start; */
-  }
-  
-  .front-text {
-    /* padding-top: 0%; */
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 400%;
-    border-bottom: 5px solid;
-    opacity: .9;
-    animation: textAnim 80s infinite alternate linear, bordAnim 120s infinite alternate linear;
-    transition: all 1s ease;
-    /* align-self: center; */
-    }
-  
-    .front-text:hover{
-      transition: all .3s ease;
-      text-shadow: 0px 5px 40px ;
-    }
-  
-  .nav {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    height: 40vh;
-    justify-content: space-evenly;
-  }
-  
-  .nav-item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 25vw;
-    height: 5vh;
-    padding: .2vw;
-    cursor: pointer;
-    border: 2px solid;
-    border-spacing: 5%;
-    text-align: center;
-    font-size: 140%;
-    opacity: .8;
-    color:rgb(99, 139, 148);
-    border-color: rgb(123, 159, 167);
-    transition: all 4s ease;
-    font-family: 'Raleway', sans-serif;
-  }
-  
-  .nav-item:hover {
-    color: rgb(183, 237, 247);
-    opacity: 1;
-    box-shadow: 0px 0px 10px rgb(170, 228, 238);
-    text-shadow: 0px 0px 25px rgb(75, 99, 104);
-    transition: all .1s ease;
-  }
-  
+.front-page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
 
-  @media screen and (min-width: 800px){
-    .nav-item{
-      width: 20vw;
-    }
+.settings{
+  align-self: flex-end;
+}
+
+.front-text {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 400%;
+  border-bottom: 5px solid;
+  opacity: .9;
+  animation: textAnim 80s infinite alternate linear, bordAnim 120s infinite alternate linear;
+  transition: all 1s ease;
   }
-  @media screen and (min-width: 1300px){
-    .nav-item{
-      width: 15vw;
-    }
+  
+.front-text:hover{
+  transition: all .3s ease;
+  text-shadow: 0px 5px 40px ;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: 40vh;
+  justify-content: space-evenly;
+}
+
+.nav-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25vw;
+  height: 5vh;
+  padding: .2vw;
+  cursor: pointer;
+  border: 2px solid;
+  border-spacing: 5%;
+  text-align: center;
+  font-size: 140%;
+  opacity: .8;
+  color:rgb(99, 139, 148);
+  border-color: rgb(123, 159, 167);
+  transition: all 4s ease;
+  font-family: 'Raleway', sans-serif;
+}
+
+.nav-item:hover {
+  color: rgb(183, 237, 247);
+  opacity: 1;
+  box-shadow: 0px 0px 10px rgb(170, 228, 238);
+  text-shadow: 0px 0px 25px rgb(75, 99, 104);
+  transition: all .1s ease;
+}
+
+@media screen and (min-width: 800px){
+  .nav-item{
+    width: 20vw;
   }
-  @media screen and (min-width: 1600px){
-    .nav-item{
-      width: 10vw;
-    }
+}
+@media screen and (min-width: 1300px){
+  .nav-item{
+    width: 15vw;
   }
+}
+@media screen and (min-width: 1600px){
+  .nav-item{
+    width: 10vw;
+  }
+}
   
   
   
