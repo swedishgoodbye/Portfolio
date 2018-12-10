@@ -20,13 +20,13 @@ class About extends Component{
                         <div className='about-content'>
 
                             <h1 className='about-name'>
-                                <a className='about-name about-link' href='http://opticalfalicy.com'>
+                                <a className='about-name about-link' href='https://www.linkedin.com/in/brett-sullivan-a40445104/'>
                                     Brett Sullivan
                                 </a>
                             </h1>
 
                             <h2 className='about-title'>
-                                <a href='https://www.linkedin.com/in/brett-sullivan-a40445104/' className='about-title about-link'>
+                                <a href='https://github.com/swedishgoodbye' className='about-title about-link'>
                                     Web Developer
                                 </a>
                             </h2>
@@ -34,7 +34,7 @@ class About extends Component{
                             <ul className='about-info'>
                                 <li className='about-location info-item list-item'><a href='https://goo.gl/maps/2fqUPj7VPyu' className='about-location info-item about-link'>Location: Chicago, Il, USA</a></li>
                                 <li className='about-education info-item list-item'><a href='https://www.lambdaschool.com' className='about-education info-item about-link'>Education: Lambda School</a></li>
-                                <li className='about-status info-item list-item'><a href='https://github.com/swedishgoodbye' className='about-status info-item about-link'>Status: Self-Educating / Seeking Employment</a></li>
+                                <li className='about-status info-item list-item'><a href="https://drive.google.com/open?id=1_CryoXmoUZFBhMoppo_xVjiGS6bFHzis" className='about-status info-item about-link'>Status: Self-Educating / Seeking Employment</a></li>
                             </ul>
 
                         </div>

@@ -181,10 +181,10 @@
     color: rgb(255, 254, 254);
     background-color: rgba(0, 19, 37);
     font-family: 'Raleway', sans-serif;
-    text-decoration: underline;
-    font-size: 120%;
+    /* text-decoration: underline; */
+    font-size: 88%;
     text-align: center;
-    height: 20vh;
+    height: 25vh;
     width: 70vw;
     display: flex;
     align-items: center;
@@ -285,6 +285,11 @@
     .project-thumbnail{
         width: 30vw;
         /* height: 20vh; */
+    }
+    .modal-description{
+        line-height: 1.5;
+        padding: 0.5vw;
+        font-size: 104%;
     }
 
 }

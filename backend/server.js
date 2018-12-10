@@ -39,7 +39,7 @@ server.use(cors(corsOptions));
 
 // mLab connection
 
-mongoose.connect('mongodb://testuser:testpa$$w0rd.mlab.com:55332/heroku_22q0cls2', { useNewUrlParser: true })
+mongoose.connect('mongodb://agooduser:ag00dpassword@ds255332.mlab.com:55332/heroku_22q0cls2', { useNewUrlParser: true })
 
 // mongoose.connect('mongodb://localhost:5000', {useNewUrlParser: true})
 
