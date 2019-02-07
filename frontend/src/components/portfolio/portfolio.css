@@ -57,7 +57,8 @@
   height: 70vh;
   display: flex;
   justify-content: space-evenly;
-  align-content: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
   flex-direction: row;
   box-shadow: 0px 0px 20px rgb(170, 228, 238);
 }
@@ -65,13 +66,16 @@
 .project-thumbnail {
   width: 33.5vw;
   height: 5vw;
-  margin: 2vh 0;
+  margin: 2vh 0.1vw;
   cursor: pointer;
 }
 
 .project-img {
-  width: 33.5vw;
-  height: 15vh;
+  /* width: 33.5vw; */
+  /* height: 15vh; */
+  width: 100%;
+  height: 100%;
+  /* margin: 0.5%; */
   opacity: 1;
   box-shadow: 0px 0px 10px rgb(170, 228, 238);
 }
@@ -91,6 +95,11 @@
 
 .link:hover {
   transition: none;
+  background-image: url("https://lh3.googleusercontent.com/KpcLJvwRDKMhMAE2WpbdEAZ253FtUEoBGoCyvvNjoAey7jZXT8Y3GoxxmGAgDf25Kg74ohTr2YLNBPBcM0_DL4IZ3VwuZ5oPonkNx040uXpU9Jg7FgMO5edRnad9GSNz1We-X_z7XpweX67za_-IK6ukuTQt2Lp68XMsu0tHAv_7GBFI0eE-OHgQuUMD8phrXH2DH16peZuAJSZt7iy3u2ydYA44LPc49TF5Lhdt905X21RGlpuZQTif4r_Gx6uBVu0kawmWh7Nk_tsKHt7qhdYWB9F2hOKOKtmhfm_mv1e5u9g0aw-1mXaXnWQwEq0Q5STsUtmoIQG67KDek3eb99eMVZoaVdHIrrMSKfVMklRaxr6Wt7d8ziomA5P_ilI8bejfdhZ088RNKVI-ubLTNAKFFBW4zxOINHKu8p321n2dw65VoOqsHvQePt7UnBi_9URBMK1qAlOjL17AJCUOiGeNrWW9vYf9ZTamCNWPrUNN7aIfxCk5taB9fF7PfBBKT5vJYr_XW_7uj1i0VVwHDISLw9iAJF-FjOBupkQF_KBb2gTKiYJoiAzrWER_fqIT7LB9bv5Vq6zfdHzmd3VPmiFPBNphvjACHBzFsVCofUt_is4jjIfoUn6MYr4LEn7EoDUkzMkiKQAjKI0F261agiv_INrrsu8=w288-h151-no");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
 }
 
 .project-modal {
@@ -247,7 +256,7 @@
     width: 50vw;
   }
   .project-img {
-    width: 30vw;
+    /* width: 30vw; */
   }
   .project-thumbnail {
     width: 30vw;
@@ -284,12 +293,12 @@
 
 @media screen and (min-width: 1000px) {
   .project-img {
-    width: 30vw;
+    /* width: 30vw; */
     /* height: 20vh; */
   }
   .project-thumbnail {
     width: 30vw;
-    /* height: 20vh; */
+    height: 20vh;
   }
   .modal-description {
     line-height: 1.5;
@@ -323,7 +332,7 @@
     width: 30vw;
   }
   .project-img {
-    width: 20vw;
+    /* width: 20vw; */
   }
   .project-thumbnail {
     width: 20vw;
@@ -378,7 +387,7 @@
     width: 30vw;
   }
   .project-img {
-    width: 20vw;
+    /* width: 20vw; */
   }
   .portfolio-projects {
     width: 60vw;
