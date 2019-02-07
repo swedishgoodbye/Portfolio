@@ -1,418 +1,416 @@
-.portfolio-page{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+.portfolio-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
-.portfolio-display{
-    background: rgba(0, 19, 37, 0.733);
-    width: 85vw;
-    height: 80vh;
-    align-self: center;
-    border: 3px solid rgba(207, 230, 252, 0.685);
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: .5vw;
+.portfolio-display {
+  background: rgba(0, 19, 37, 0.733);
+  width: 85vw;
+  height: 80vh;
+  align-self: center;
+  border: 3px solid rgba(207, 230, 252, 0.685);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5vw;
 }
 
-.portfolio-page-exit{
-    opacity: .7;
-    color: rgb(255, 254, 254);
-    padding: 0 0 0 .5vw;
-    width: 2%;
+.portfolio-page-exit {
+  opacity: 0.7;
+  color: rgb(255, 254, 254);
+  padding: 0 0 0 0.5vw;
+  width: 2%;
 }
 
-.portfolio-page-exit:hover{
-    opacity: .9;    
+.portfolio-page-exit:hover {
+  opacity: 0.9;
 }
 
-.portfolio-display-inner{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 75vh;
-    opacity: .8;
+.portfolio-display-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 75vh;
+  opacity: 0.8;
 }
 
-.portfolio-display-arrow-left{
-    width: 0; 
-    height: 0; 
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-right: 15px solid rgb(207, 230, 252);
-    cursor: pointer;
-    text-shadow: 0px 0px 10px rgb(170, 228, 238);
+.portfolio-display-arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid rgb(207, 230, 252);
+  cursor: pointer;
+  text-shadow: 0px 0px 10px rgb(170, 228, 238);
 }
 
-.portfolio-display-arrow-left:hover{
-    border-right-color: rgb(246, 250, 253);
+.portfolio-display-arrow-left:hover {
+  border-right-color: rgb(246, 250, 253);
 }
 
-.portfolio-projects{
-    border: 1px solid rgba(207, 230, 252, 0.685);
-    width: 75vw;
-    height: 70vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-content: flex-start;
-    flex-direction: row;
-    box-shadow: 0px 0px 20px rgb(170, 228, 238);
+.portfolio-projects {
+  border: 1px solid rgba(207, 230, 252, 0.685);
+  width: 75vw;
+  height: 70vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  flex-direction: row;
+  box-shadow: 0px 0px 20px rgb(170, 228, 238);
 }
 
-.project-thumbnail{
-    width: 33.5vw;
-    height: 5vw;
-    margin: 2vh 0;
-    cursor: pointer;
+.project-thumbnail {
+  width: 33.5vw;
+  height: 5vw;
+  margin: 2vh 0;
+  cursor: pointer;
 }
 
-.project-img{
-    width: 33.5vw;
-    height: 15vh;
-    opacity: 1;
-    box-shadow: 0px 0px 10px rgb(170, 228, 238);
+.project-img {
+  width: 33.5vw;
+  height: 15vh;
+  opacity: 1;
+  box-shadow: 0px 0px 10px rgb(170, 228, 238);
 }
 
-.project-img:hover{
-    opacity: .8;
-    box-shadow: 0px 0px 15px rgb(170, 228, 238);
+.project-img:hover {
+  opacity: 0.8;
+  box-shadow: 0px 0px 15px rgb(170, 228, 238);
+}
+
+.git:hover {
+  background-image: url("https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png");
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: none;
+}
+
+.link:hover {
+  transition: none;
 }
 
 .project-modal {
-    position: absolute;
-    top: 5.2vh;
-    left: 5.52vw;
-    right: 40px;
-    background: rgba(207, 230, 252, 0.685);;
-    width: 75vw;
-    height: 69.9vh;
-    border: 3px solid rgba(00, 19, 37);
-  }
-  
+  position: absolute;
+  top: 5.2vh;
+  left: 5.52vw;
+  right: 40px;
+  background: rgba(207, 230, 252, 0.685);
+  width: 75vw;
+  height: 69.9vh;
+  border: 3px solid rgba(00, 19, 37);
+}
+
 .project-overlay {
-    position: fixed;
-    top: 10vh;
-    left: 7vw;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 19, 37);
-    height: 80vh;
-    width: 86vw;
-  }
+  position: fixed;
+  top: 10vh;
+  left: 7vw;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 19, 37);
+  height: 80vh;
+  width: 86vw;
+}
 
 .project-modal:focus {
-    outline: 0;
+  outline: 0;
 }
 
-.modal-exit{
-    opacity: .7;
-    color: rgb(255, 254, 254);
-    padding: .5vw 0 0 1vw;
-    width: 1.2%;
-    margin: 0;
-    cursor: pointer;
-    
+.modal-exit {
+  opacity: 0.7;
+  color: rgb(255, 254, 254);
+  padding: 0.5vw 0 0 1vw;
+  width: 1.2%;
+  margin: 0;
+  cursor: pointer;
 }
 
-.modal-exit:hover{
-    opacity: .9;
+.modal-exit:hover {
+  opacity: 0.9;
 }
 
-.modal-content{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    padding-top: 3vh;
-    width: 75vw;
-    height: 60vh;
-    
+.modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-top: 3vh;
+  width: 75vw;
+  height: 60vh;
 }
 
-.modal-link{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-    background-color: rgba(0, 19, 37);
-    width: 60vw;
-    height: 20vh;
+.modal-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  background-color: rgba(0, 19, 37);
+  width: 60vw;
+  height: 20vh;
+  transition: none;
 }
 
-.modal-img{
-    width: 45vw;
+.modal-img {
+  width: 45vw;
+  height: 15vh;
+  opacity: 1;
+  box-shadow: 0px 0px 10px rgb(170, 228, 238);
+}
+
+.modal-img:hover {
+  opacity: 0.8;
+  box-shadow: 0px 0px 15px rgb(170, 228, 238);
+}
+
+.modal-title {
+  color: white;
+}
+
+.modal-name {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: rgb(255, 254, 254);
+  background-color: rgba(0, 19, 37);
+  font-size: 180%;
+  height: 8vh;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 3px solid rgba(207, 230, 252, 0.685);
+  border-right: 3px solid rgba(207, 230, 252, 0.685);
+}
+
+.modal-description {
+  color: rgb(255, 254, 254);
+  background-color: rgba(0, 19, 37);
+  font-family: "Raleway", sans-serif;
+  /* text-decoration: underline; */
+  font-size: 88%;
+  text-align: center;
+  height: 25vh;
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 3px solid rgba(207, 230, 252, 0.685);
+  border-right: 3px solid rgba(207, 230, 252, 0.685);
+}
+
+.project-stack {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(255, 254, 254);
+  font-family: "Raleway", sans-serif;
+  font-size: 120%;
+}
+
+.portfolio-display-arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid rgb(207, 230, 252);
+  cursor: pointer;
+}
+
+.portfolio-display-arrow-right:hover {
+  border-left-color: rgb(246, 250, 253);
+}
+
+@media screen and (min-width: 800px) {
+  .portfolio-display {
+    width: 80vw;
+  }
+  .portfolio-content {
+    width: 50vw;
+  }
+  .portfolio-name {
     height: 15vh;
-    opacity: 1;
-    box-shadow: 0px 0px 10px rgb(170, 228, 238);
-}
-
-.modal-img:hover{
-    opacity: .8;
-    box-shadow: 0px 0px 15px rgb(170, 228, 238);
-}
-
-
-
-
-.modal-title{
-    color: white;
-
-}
-
-.modal-name{
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    color: rgb(255, 254, 254);
-    background-color: rgba(0, 19, 37);
-    font-size: 180%;
-    height: 8vh;
-    width: 60vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-left: 3px solid rgba(207, 230, 252, 0.685);
-    border-right: 3px solid rgba(207, 230, 252, 0.685);
-}
-
-.modal-description{
-    color: rgb(255, 254, 254);
-    background-color: rgba(0, 19, 37);
-    font-family: 'Raleway', sans-serif;
-    /* text-decoration: underline; */
-    font-size: 88%;
-    text-align: center;
-    height: 25vh;
+    font-size: 3.5vw;
+    width: 50vw;
+  }
+  .portfolio-title {
+    height: 15vh;
+    font-size: 3vw;
+    width: 50vw;
+  }
+  .portfolio-info {
+    height: 15vh;
+    width: 50vw;
+  }
+  .info-item {
+    width: 50vw;
+  }
+  .project-img {
+    width: 30vw;
+  }
+  .project-thumbnail {
+    width: 30vw;
+  }
+  .project-overlay {
+    top: 10vh;
+    left: 10vw;
+    height: 80vh;
+    width: 80vw;
+  }
+  .project-modal {
+    top: 5vh;
+    left: 5vw;
     width: 70vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-left: 3px solid rgba(207, 230, 252, 0.685);
-    border-right: 3px solid rgba(207, 230, 252, 0.685);
+    height: 70vh;
+  }
+  .modal-content {
+    width: 70vw;
+  }
+  .modal-link {
+    width: 45vw;
+  }
+  .modal-img {
+    width: 35vw;
+  }
+  .modal-name {
+    width: 50vw;
+  }
+  .modal-description {
+    width: 65vw;
+  }
+  /* .modal-link */
 }
 
-.project-stack{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: rgb(255, 254, 254);
-    font-family: 'Raleway', sans-serif;
-    font-size: 120%;
+@media screen and (min-width: 1000px) {
+  .project-img {
+    width: 30vw;
+    /* height: 20vh; */
+  }
+  .project-thumbnail {
+    width: 30vw;
+    /* height: 20vh; */
+  }
+  .modal-description {
+    line-height: 1.5;
+    padding: 0.5vw;
+    font-size: 104%;
+  }
 }
 
-.portfolio-display-arrow-right{
-    width: 0; 
-    height: 0; 
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 15px solid rgb(207, 230, 252);
-    cursor: pointer;
+@media screen and (min-width: 1300px) {
+  .portfolio-display {
+    width: 70vw;
+  }
+  .portfolio-content {
+    width: 30vw;
+  }
+  .portfolio-name {
+    font-size: 2.5vw;
+    width: 35vw;
+  }
+  .portfolio-title {
+    font-size: 2vw;
+    width: 35vw;
+  }
+  .portfolio-info {
+    width: 35vw;
+  }
+  .info-item {
+    width: 35vw;
+  }
+  .modal-link {
+    width: 30vw;
+  }
+  .project-img {
+    width: 20vw;
+  }
+  .project-thumbnail {
+    width: 20vw;
+  }
+  .portfolio-projects {
+    width: 65vw;
+  }
+  .project-overlay {
+    height: 81vh;
+    width: 71vw;
+    left: 14.5vw;
+  }
+  .project-modal {
+    width: 61vw;
+  }
+  .modal-content {
+    width: 61vw;
+  }
+  .modal-link {
+    width: 30vw;
+  }
+  .modal-img {
+    width: 25vw;
+  }
+  .modal-name {
+    width: 35vw;
+  }
+  .modal-description {
+    width: 55vw;
+  }
 }
 
-.portfolio-display-arrow-right:hover{
-    border-left-color: rgb(246, 250, 253);
+@media screen and (min-width: 1600px) {
+  .portfolio-display {
+    width: 65vw;
+  }
+  .portfolio-content {
+    width: 30vw;
+  }
+  .portfolio-name {
+    width: 30vw;
+    font-size: 1.8vw;
+  }
+  .portfolio-title {
+    width: 30vw;
+    font-size: 1.3vw;
+  }
+  .portfolio-info {
+    width: 30vw;
+  }
+  .info-item {
+    width: 30vw;
+  }
+  .project-img {
+    width: 20vw;
+  }
+  .portfolio-projects {
+    width: 60vw;
+  }
+  .project-thumbnail {
+    width: 20vw;
+  }
+  .project-overlay {
+    height: 81vh;
+    width: 66vw;
+    left: 17vw;
+    top: 9vh;
+  }
+  .project-modal {
+    width: 56vw;
+  }
+  .modal-name {
+    width: 35vw;
+  }
+  .modal-description {
+    width: 50vw;
+  }
+  .modal-content {
+    width: 56vw;
+  }
+  .modal-link {
+    width: 20vw;
+  }
+  .modal-img {
+    width: 15vw;
+  }
+  .modal-name {
+    width: 25vw;
+  }
 }
-
-@media screen and (min-width: 800px){
-
-    .portfolio-display{
-        width: 80vw;
-    }
-    .portfolio-content{
-        width: 50vw;
-
-    }
-    .portfolio-name{
-        height: 15vh;
-        font-size: 3.5vw;
-        width: 50vw;
-    }
-    .portfolio-title{
-        height: 15vh;
-        font-size: 3vw;
-        width: 50vw;
-    }
-    .portfolio-info{
-        height: 15vh;
-        width: 50vw;
-    }
-    .info-item{
-        width: 50vw;
-    }
-    .project-img{
-        width: 30vw;
-    }
-    .project-thumbnail{
-        width: 30vw;
-    }
-    .project-overlay{
-        top: 10vh;
-        left: 10vw;
-        height: 80vh;
-        width: 80vw;
-    }
-    .project-modal{
-        top: 5vh;
-        left: 5vw;
-        width: 70vw;
-        height: 70vh;
-    }
-    .modal-content{
-        width: 70vw;
-    }
-    .modal-link{
-        width: 45vw;
-    }
-    .modal-img{
-        width: 35vw;
-    }
-    .modal-name{
-        width: 50vw;
-    }
-    .modal-description{
-        width: 65vw;
-    }
-    /* .modal-link */
-}
-
-@media screen and (min-width: 1000px){
-    .project-img{
-        width: 30vw;
-        /* height: 20vh; */
-    }
-    .project-thumbnail{
-        width: 30vw;
-        /* height: 20vh; */
-    }
-    .modal-description{
-        line-height: 1.5;
-        padding: 0.5vw;
-        font-size: 104%;
-    }
-
-}
-
- @media screen and (min-width: 1300px){
-    .portfolio-display{
-        width: 70vw;
-    }
-    .portfolio-content{
-        width: 30vw;
-    }
-    .portfolio-name{
-        font-size: 2.5vw;
-        width: 35vw;
-    }
-    .portfolio-title{
-        font-size: 2vw;
-        width: 35vw;
-    }
-    .portfolio-info{
-        width: 35vw;
-    }
-    .info-item{
-        width: 35vw;
-    }
-    .modal-link{
-        width: 30vw;
-    }
-    .project-img{
-        width: 20vw;
-    }
-    .project-thumbnail{
-        width: 20vw;
-    }
-    .portfolio-projects{
-        width: 65vw;
-    }
-    .project-overlay{
-        height: 81vh;
-        width: 71vw;
-        left: 14.5vw;
-    }
-    .project-modal{
-        width: 61vw;
-    }
-    .modal-content{
-        width: 61vw;
-    }
-    .modal-link{
-        width: 30vw;
-    }
-    .modal-img{
-        width: 25vw;
-    }
-    .modal-name{
-        width: 35vw;
-    }
-    .modal-description{
-        width: 55vw;
-    }
-    
-}
-
-
-
-@media screen and (min-width: 1600px){
-    .portfolio-display{
-        width: 65vw;
-    }
-    .portfolio-content{
-        width: 30vw;
-    }
-    .portfolio-name{
-        width: 30vw;
-        font-size: 1.8vw;
-    }
-    .portfolio-title{
-        width: 30vw;
-        font-size: 1.3vw;
-    }
-    .portfolio-info{
-        width: 30vw;    
-    }
-    .info-item{
-        width: 30vw;    
-    }
-    .project-img{
-        width: 20vw;
-    }
-    .portfolio-projects{
-        width: 60vw;
-    }
-    .project-thumbnail{
-        width: 20vw;
-    }
-    .project-overlay{
-        height: 81vh;
-        width: 66vw;
-        left: 17vw;
-        top: 9vh;
-    }
-    .project-modal{
-        width: 56vw;
-    }
-    .modal-name{
-        width: 35vw;
-    }
-    .modal-description{
-        width: 50vw;
-    }
-    .modal-content{
-        width: 56vw;
-    }
-    .modal-link{
-        width: 20vw;
-    }
-    .modal-img{
-        width: 15vw;
-    }
-    .modal-name{
-        width: 25vw;
-    }
-    
-
-
-} 

@@ -1,4 +1,4 @@
-import Front from './front-page';
+ import Front from './front-page';
 import About from './about';
 import Portfolio from './portfolio';
 import Music from './music';
