@@ -37,7 +37,7 @@ class Portfolio extends Component {
     this.setState({ modalIsOpen: false });
   };
 
-  componentDidMount() {
+  componentWillMount() {
     this.props.getProjects();
     this.setState({
       projectIndex: 0,
@@ -90,7 +90,8 @@ class Portfolio extends Component {
 
                       <div className="modal-content">
                         <a
-                          href={`http://www.${selected.link}`}
+                          href={`${selected.link}`}
+                          target="_blank"
                           className={`modal-link ${selected.projType}`}
                         >
                           <img
